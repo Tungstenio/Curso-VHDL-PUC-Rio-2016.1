@@ -1,0 +1,3 @@
+vhdl isim_temp "src/fadder.vhd"
+vhdl isim_temp "FAdder4BitBlocos.vhd"
+vhdl isim_temp "FAdder4BitBlocos_TB.vhd"

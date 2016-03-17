@@ -1,0 +1,1 @@
+vhdtdtfi -prj RX_RS232 -o "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aula3/RX_RS232/ShiftRegister.vhi" -module ShiftRegister -template C:/Xilinx/14.5/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work src/ShiftRegister.vhd 

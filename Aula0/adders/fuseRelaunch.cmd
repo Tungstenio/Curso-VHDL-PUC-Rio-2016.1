@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Opto/Dropbox/Curso de Extensao VHDL/Aula0/adders/two_halfadder_tb_isim_beh.exe" -prj "C:/Users/Opto/Dropbox/Curso de Extensao VHDL/Aula0/adders/two_halfadder_tb_beh.prj" "work.two_halfadder_tb" 

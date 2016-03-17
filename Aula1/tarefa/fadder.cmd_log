@@ -1,0 +1,5 @@
+vhdtdtfi -lib work src/fadder.vhd -prj tarefa -o fadder.spl -module fadder -template C:/Xilinx/14.5/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e fadder.spl {C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula1/tarefa/fadder.sym} 
+vhdtdtfi -lib work src/fadder.vhd -prj tarefa -o fadder.spl -module fadder -template C:/Xilinx/14.5/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e fadder.spl {C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula1/tarefa/fadder.sym} 
+vhdtdtfi -prj tarefa -o "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula1/tarefa/fadder.vhi" -module fadder -template C:/Xilinx/14.5/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work src/fadder.vhd 

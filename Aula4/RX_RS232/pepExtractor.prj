@@ -1,0 +1,3 @@
+work	"rx_rs232_v2.vhd"
+work	"src/counter_limit.vhd"
+work	"src/rx_counters.vhd"

@@ -1,0 +1,3 @@
+MODULE sr
+	SUBMODULE ShiftRegister
+		INSTANCE XLXI_1

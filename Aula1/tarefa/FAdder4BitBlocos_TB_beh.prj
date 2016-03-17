@@ -1,0 +1,3 @@
+vhdl work "src/fadder.vhd"
+vhdl work "FAdder4BitBlocos.vhd"
+vhdl work "FAdder4BitBlocos_TB.vhd"

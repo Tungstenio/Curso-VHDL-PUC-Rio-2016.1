@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aula3/TX_RX_RS232/tx_rx_rs232/tx_rx_rs232_tb_isim_beh.exe" -prj "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aula3/TX_RX_RS232/tx_rx_rs232/tx_rx_rs232_tb_beh.prj" "tx_rx_rs232_tb" 

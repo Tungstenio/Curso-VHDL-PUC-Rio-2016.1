@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula1/shiftregister/ShiftRegisterFSM_TB_isim_beh.exe" -prj "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula1/shiftregister/ShiftRegisterFSM_TB_beh.prj" "work.ShiftRegisterFSM_TB" 

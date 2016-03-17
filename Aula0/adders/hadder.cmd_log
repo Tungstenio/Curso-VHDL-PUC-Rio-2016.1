@@ -1,0 +1,1 @@
+vhdtdtfi -prj adders -o "C:/Users/Opto/Dropbox/Curso de Extensao VHDL/Aula0/adders/hadder.vhi" -module hadder -template D:/Xilinx/14.5/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work src/hadder.vhd 

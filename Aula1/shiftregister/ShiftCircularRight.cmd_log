@@ -1,0 +1,2 @@
+vhdtdtfi -lib work src/ShiftCircularRight.vhd -prj shiftregister -o ShiftCircularRight.spl -module ShiftCircularRight -template C:/Xilinx/14.5/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e ShiftCircularRight.spl {C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula1/shiftregister/ShiftCircularRight.sym} 
