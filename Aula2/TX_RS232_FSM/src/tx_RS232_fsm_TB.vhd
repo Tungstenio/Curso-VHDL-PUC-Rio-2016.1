@@ -15,7 +15,7 @@ ARCHITECTURE behavior OF tx_RS232_fsm_TB IS
          LOCAL_CLOCK : IN  std_logic;
          DATA_IN : IN  std_logic_vector(7 downto 0);
          TRANSMIT : IN  std_logic;
-         BAUD_RATE : IN  std_logic_vector(3 downto 0);
+         BAUD_RATE : IN  std_logic_vector(14 downto 0);
 			
 			DEBUG			: OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
 			
@@ -30,7 +30,7 @@ ARCHITECTURE behavior OF tx_RS232_fsm_TB IS
    signal LOCAL_CLOCK : std_logic := '0';
    signal DATA_IN : std_logic_vector(7 downto 0) := (others => '0');
    signal TRANSMIT : std_logic := '0';
-   signal BAUD_RATE : std_logic_vector(3 downto 0) := (others => '0');
+   signal BAUD_RATE : std_logic_vector(14 downto 0) := (others => '0');
 
  	--Outputs
    signal DATA_OUT : std_logic;
@@ -72,8 +72,14 @@ BEGIN
    begin		
       wait for 100 ns;
 		wait until LOCAL_CLOCK = '1';
-		BAUD_RATE 	<= "0101";
+		BAUD_RATE 	<= "000000000000101";
 		DATA_IN		<= "10110001";
+		TRANSMIT		<= '1';
+		wait for LOCAL_CLOCK_period;
+		TRANSMIT		<= '0';
+		
+		wait until TX_DONE = '1';
+		wait for LOCAL_CLOCK_period;
 		TRANSMIT		<= '1';
 		wait for LOCAL_CLOCK_period;
 		TRANSMIT		<= '0';

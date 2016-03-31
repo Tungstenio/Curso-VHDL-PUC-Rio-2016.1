@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/Opto/Dropbox/Curso de Extensao VHDL/Aula2/tarefa/ShiftRegister_tb_isim_beh.exe" -prj "C:/Users/Opto/Dropbox/Curso de Extensao VHDL/Aula2/tarefa/ShiftRegister_tb_beh.prj" "work.ShiftRegister_tb" 
+-intstyle "ise" -incremental -o "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula2/tarefa/ShiftRegister_tb_isim_beh.exe" -prj "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula2/tarefa/ShiftRegister_tb_beh.prj" "work.ShiftRegister_tb" 

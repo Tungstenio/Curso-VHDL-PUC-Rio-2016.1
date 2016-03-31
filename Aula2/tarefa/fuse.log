@@ -1,0 +1,21 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula2/tarefa/ShiftRegister_tb_isim_beh.exe -prj C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula2/tarefa/ShiftRegister_tb_beh.prj work.ShiftRegister_tb 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula2/tarefa/src/ShiftRegister.vhd" into library work
+Parsing VHDL file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula2/tarefa/src/ShiftRegister_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity ShiftRegister [shiftregister_default]
+Compiling architecture behavior of entity shiftregister_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 7 VHDL Units
+Built simulation executable C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula2/tarefa/ShiftRegister_tb_isim_beh.exe
+Fuse Memory Usage: 33208 KB
+Fuse CPU Usage: 609 ms

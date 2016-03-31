@@ -1,0 +1,2 @@
+vhdl work "src/ShiftRegister.vhd"
+vhdl work "src/ShiftRegister_tb.vhd"

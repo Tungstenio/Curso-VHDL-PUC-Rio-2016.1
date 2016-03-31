@@ -51,6 +51,7 @@ begin
 				
 					DEBUG <= "111";
 				
+					BAUD_COUNTER		<= (others => '0');
 					TX_DONE				<= '0';
 					MSG_BIT_COUNTER	<= (others => '0');
 					DATA_OUT_BUF 		<= '1';

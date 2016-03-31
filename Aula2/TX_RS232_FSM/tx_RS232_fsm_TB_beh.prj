@@ -1,0 +1,2 @@
+vhdl work "src/tx_RS232_fsm.vhd"
+vhdl work "src/tx_RS232_fsm_TB.vhd"
