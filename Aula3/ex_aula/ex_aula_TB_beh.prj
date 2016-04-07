@@ -1,0 +1,5 @@
+vhdl work "src/counter_pulse.vhd"
+vhdl work "src/counter_limit.vhd"
+vhdl work "src/biestavel.vhd"
+vhdl work "src/ex_aula.vhd"
+vhdl work "src/ex_aula_TB.vhd"

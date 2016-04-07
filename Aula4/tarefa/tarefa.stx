@@ -1,0 +1,47 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.42 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.42 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/src/counter_pulse.vhd" in Library work.
+Entity <counter_pulse> compiled.
+Entity <counter_pulse> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/src/counter_limit.vhd" in Library work.
+Entity <counter_limit> compiled.
+Entity <counter_limit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/src/biestavel.vhd" in Library work.
+Entity <biestavel> compiled.
+Entity <biestavel> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/src/ShiftRegister.vhd" in Library work.
+Entity <ShiftRegister> compiled.
+Entity <ShiftRegister> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/src/tarefa.vhd" in Library work.
+Entity <tarefa> compiled.
+ERROR:HDLParsers:1411 - "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/src/tarefa.vhd" Line 96. Parameter DONE of mode out can not be associated with a formal port of mode in.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.91 secs
+ 
+--> 
+
+Total memory usage is 268800 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

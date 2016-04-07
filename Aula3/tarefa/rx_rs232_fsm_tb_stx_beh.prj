@@ -1,0 +1,2 @@
+vhdl isim_temp "src/rx_rs232_fsm.vhd"
+vhdl isim_temp "src/rx_rs232_fsm_tb.vhd"

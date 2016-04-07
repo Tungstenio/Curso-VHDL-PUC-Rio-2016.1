@@ -3,7 +3,7 @@
 -- Engineer:     Felipe Calliari
 --               Gustavo Amaral
 --               Rudah Guedes
--- Create Date:  11:45:57 03/02/2016 
+-- Create Date:  12:23:09 03/01/2016 
 -- Module Name:  counter_limit - Behavioral 
 ----------------------------------------------------------------------------------
 library IEEE;
@@ -12,49 +12,41 @@ use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity counter_limit is
-   generic(
-      SIZE : integer := 4
-   );
-   port(
-      LOCAL_CLOCK         : in  std_logic;
-      PROCESS_RUNNING     : in  std_logic;
-      LIMIT               : in  std_logic_vector(SIZE-1 downto 0);
-		
-		PULSE               : in  std_logic;
-
-      ON_LINE_COUNTER     : out std_logic_vector(SIZE-1 downto 0);
-      COUNT_DONE          : out std_logic
+   Port ( 
+      LOCAL_CLOCK     : in  STD_LOGIC;
+      ENABLE          : in  STD_LOGIC;
+      BAUD_RATE       : in  STD_LOGIC_VECTOR (12 downto 0);
+      DONE            : out STD_LOGIC
    );
 end counter_limit;
 
 architecture Behavioral of counter_limit is
 
-   signal COUNTER   : std_logic_vector(SIZE-1 downto 0) := (others => '0');
-   signal DONE      : std_logic := '0';
-
+   signal BAUD_COUNTER      : std_logic_vector(12 downto 0) := "0000000000000";
+   signal BAUD_FLAG         : std_logic := '0';
+   
 begin
 
-   -- BAUD COUNTER
+   -- RECEIVING
    process(LOCAL_CLOCK)
    begin
-      if (LOCAL_CLOCK'event and LOCAL_CLOCK = '1') then
-			if (PROCESS_RUNNING = '1') then
-				if (DONE = '1') then
-					COUNTER <= (others => '0');
+      if(LOCAL_CLOCK'event and LOCAL_CLOCK = '1') then
+         if (ENABLE = '1') then
+            if(BAUD_FLAG = '1') then
+					BAUD_COUNTER <= (others => '0');
 				else
-					if(PULSE = '1') then
-						COUNTER <= COUNTER + "1";
-					end if;
+					BAUD_COUNTER <= BAUD_COUNTER + "1";
 				end if;
 			else
-				COUNTER <= (others => '0');
-			end if;
+				BAUD_COUNTER <= (others => '0');
+         end if;
       end if;
    end process;
-   DONE <= '1' when COUNTER = LIMIT else '0';
-   --=============
-   
-   ON_LINE_COUNTER <= COUNTER;
-   COUNT_DONE      <= DONE;
+
+	-- CONTROL
+   BAUD_FLAG <= '1' when BAUD_COUNTER = (BAUD_RATE-"1") else '0';
+	
+	DONE <= BAUD_FLAG;
 
 end Behavioral;
+

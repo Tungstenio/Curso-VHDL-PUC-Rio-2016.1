@@ -1,0 +1,4 @@
+work	"src/biestavel.vhd"
+work	"src/counter_limit.vhd"
+work	"src/counter_pulse.vhd"
+work	"src/ex_aula.vhd"

@@ -1,0 +1,9 @@
+AR shiftregister behavioral "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/src/ShiftRegister.vhd" sub00/vhpl07 1460057041
+EN counter_limit NULL "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/src/counter_limit.vhd" sub00/vhpl02 1460057036
+EN shiftregister NULL "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/src/ShiftRegister.vhd" sub00/vhpl06 1460057040
+EN tarefa NULL "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/src/tarefa.vhd" sub00/vhpl08 1460057042
+AR counter_pulse behavioral "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/src/counter_pulse.vhd" sub00/vhpl01 1460057035
+EN biestavel NULL "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/src/biestavel.vhd" sub00/vhpl04 1460057038
+AR biestavel behavioral "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/src/biestavel.vhd" sub00/vhpl05 1460057039
+AR counter_limit behavioral "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/src/counter_limit.vhd" sub00/vhpl03 1460057037
+EN counter_pulse NULL "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/src/counter_pulse.vhd" sub00/vhpl00 1460057034

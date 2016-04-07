@@ -1,0 +1,6 @@
+vhdl work "src/ShiftRegister.vhd"
+vhdl work "src/counter_pulse.vhd"
+vhdl work "src/counter_limit.vhd"
+vhdl work "src/biestavel.vhd"
+vhdl work "src/tarefa.vhd"
+vhdl work "src/tarefa_TB.vhd"

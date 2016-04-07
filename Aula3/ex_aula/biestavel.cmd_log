@@ -1,0 +1,1 @@
+vhdtdtfi -prj ex_aula -o "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula3/ex_aula/biestavel.vhi" -module biestavel -template C:/Xilinx/14.5/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work src/biestavel.vhd 

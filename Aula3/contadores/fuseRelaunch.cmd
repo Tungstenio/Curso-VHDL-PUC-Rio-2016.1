@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aula3/contadores/counter_limit_tb_isim_beh.exe" -prj "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aula3/contadores/counter_limit_tb_beh.prj" "work.counter_limit_tb" 
+-intstyle "ise" -incremental -o "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula3/contadores/counter_limit_tb_isim_beh.exe" -prj "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula3/contadores/counter_limit_tb_beh.prj" "work.counter_limit_tb" 

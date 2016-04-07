@@ -72,6 +72,8 @@
     <transform xil_pn:end_ts="1459447451" xil_pn:in_ck="4553944936209550960" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7754440279116458211" xil_pn:start_ts="1459447451">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="tx_RS232_fsm_TB_isim_beh.wdb"/>
     </transform>

@@ -25,7 +25,7 @@ end rx_counters;
 
 architecture Behavioral of rx_counters is
 
-   component counter_limit
+   component counter_pulse
       generic(SIZE : integer := 4);
       port(
          LOCAL_CLOCK         : in  std_logic;
@@ -76,7 +76,7 @@ begin
 	--=============
 
 	-- BAUD COUNTER
-   b_count : counter_limit
+   b_count : counter_pulse
       generic map(size => 14)
       port map(
          LOCAL_CLOCK => LOCAL_CLOCK,
@@ -90,7 +90,7 @@ begin
 	--=============
 
 	-- MESSAGE COUNTER
-   m_count : counter_limit
+   m_count : counter_pulse
       generic map(size => 4)
       port map(
          LOCAL_CLOCK => LOCAL_CLOCK,

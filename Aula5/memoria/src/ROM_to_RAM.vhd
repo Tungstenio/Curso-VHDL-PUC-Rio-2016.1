@@ -140,7 +140,7 @@ begin
 	ROM_variables :  process(LOCAL_CLOCK)
 	begin
 		if (LOCAL_CLOCK'event and LOCAL_CLOCK = '1') then
-			ROM_ENABLE         <= (ENABLE AND NOT RUNNING_R1) OR FLAG;
+			ROM_ENABLE         <= FLAG; -- (ENABLE AND NOT RUNNING_R1) OR FLAG;
 		end if;
 	end process;
 

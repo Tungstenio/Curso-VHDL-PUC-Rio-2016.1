@@ -1,0 +1,3 @@
+vhdl work "src/counter_limit.vhd"
+vhdl work "src/tx_counters.vhd"
+vhdl work "src/tx_counters_tb.vhd"

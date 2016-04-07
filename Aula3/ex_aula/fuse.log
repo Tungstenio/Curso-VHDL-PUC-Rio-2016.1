@@ -1,0 +1,27 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula3/ex_aula/ex_aula_TB_isim_beh.exe -prj C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula3/ex_aula/ex_aula_TB_beh.prj work.ex_aula_TB 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula3/ex_aula/src/counter_pulse.vhd" into library work
+Parsing VHDL file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula3/ex_aula/src/counter_limit.vhd" into library work
+Parsing VHDL file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula3/ex_aula/src/biestavel.vhd" into library work
+Parsing VHDL file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula3/ex_aula/src/ex_aula.vhd" into library work
+Parsing VHDL file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula3/ex_aula/src/ex_aula_TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity counter_pulse [\counter_pulse(4)\]
+Compiling architecture behavioral of entity counter_limit [counter_limit_default]
+Compiling architecture behavioral of entity biestavel [biestavel_default]
+Compiling architecture behavioral of entity ex_aula [ex_aula_default]
+Compiling architecture behavior of entity ex_aula_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 13 VHDL Units
+Built simulation executable C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula3/ex_aula/ex_aula_TB_isim_beh.exe
+Fuse Memory Usage: 33484 KB
+Fuse CPU Usage: 764 ms

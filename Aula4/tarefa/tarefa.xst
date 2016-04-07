@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/tarefa/xst"
+elaborate
+-ifn tarefa.prj
+-ifmt mixed

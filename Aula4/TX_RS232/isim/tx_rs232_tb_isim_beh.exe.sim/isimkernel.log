@@ -1,0 +1,28 @@
+Command line:
+   tx_rs232_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64617
+
+Fri Apr 01 12:49:09 2016
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 368.607 Meg
+
+ Total Signals          : 59
+ Total Nets             : 105
+ Total Signal Drivers   : 26
+ Total Blocks           : 9
+ Total Primitive Blocks : 6
+ Total Processes        : 23
+ Total Traceable Variables  : 15
+ Total Scalar Nets and Variables : 488
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 683.18 Meg
+
+Fri Apr 01 12:49:45 2016
+

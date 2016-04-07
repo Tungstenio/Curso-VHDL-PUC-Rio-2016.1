@@ -98,6 +98,10 @@ BEGIN
 		wait for LOCAL_CLOCK_period*200;
 		ENABLE <= '0';
 		
+		wait for LOCAL_CLOCK_period*10;
+		ENABLE <= '1';
+		wait for LOCAL_CLOCK_period*200;
+		ENABLE <= '0';
 
       -- insert stimulus here 
 

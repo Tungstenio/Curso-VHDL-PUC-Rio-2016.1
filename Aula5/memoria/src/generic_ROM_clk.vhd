@@ -30,10 +30,10 @@ architecture Behavioral of generic_ROM_clk is
 
    type ROM is array (2**ADDRESS_SIZE-1 downto 0) of std_logic_vector(DATA_SIZE-1 downto 0);
    constant DATA : ROM := ( -- hex_mat2.txt
-      0  => X"FFFF", 1  => X"EFFF", 2  => X"DFFF", 3  => X"CFFF", 4  => X"BFFF", 5  => X"AFFF", 6  => X"9FFF", 7  => X"8FFF", 
-      8  => X"7FFF", 9  => X"6FFF", 10 => X"5FFF", 11 => X"4FFF", 12 => X"3FFF", 13 => X"2FFF", 14 => X"1FFF", 15 => X"0FFF",
-		16 => X"0EFF", 17 => X"0DFF", 18 => X"0CFF", 19 => X"0BFF", 20 => X"0AFF", 21 => X"09FF", 22 => X"08FF", 23 => X"07FF",
-		31 => X"0F0F",
+      0  => X"FF", 1  => X"EF", 2  => X"DF", 3  => X"CF", 4  => X"BF", 5  => X"AF", 6  => X"9F", 7  => X"8F", 
+      8  => X"7F", 9  => X"6F", 10 => X"5F", 11 => X"4F", 12 => X"3F", 13 => X"2F", 14 => X"1F", 15 => X"0F",
+		16 => X"0E", 17 => X"0D", 18 => X"0C", 19 => X"0B", 20 => X"0A", 21 => X"09", 22 => X"08", 23 => X"07",
+		31 => X"0F",
       others => (others => '0')
    );
 

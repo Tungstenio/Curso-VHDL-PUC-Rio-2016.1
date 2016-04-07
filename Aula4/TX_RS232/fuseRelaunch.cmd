@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aula3/TX_RS232/tx_rs232_tb_isim_beh.exe" -prj "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aula3/TX_RS232/tx_rs232_tb_beh.prj" "work.tx_rs232_tb" 
+-intstyle "ise" -incremental -o "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/TX_RS232/tx_counters_tb_isim_beh.exe" -prj "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula4/TX_RS232/tx_counters_tb_beh.prj" "work.tx_counters_tb" 
