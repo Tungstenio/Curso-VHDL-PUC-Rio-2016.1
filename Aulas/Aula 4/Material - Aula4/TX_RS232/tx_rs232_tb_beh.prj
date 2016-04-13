@@ -1,0 +1,5 @@
+vhdl work "src/counter_limit.vhd"
+vhdl work "src/tx_counters.vhd"
+vhdl work "src/ShiftRegister.vhd"
+vhdl work "src/tx_rs232.vhd"
+vhdl work "src/tx_rs232_tb.vhd"

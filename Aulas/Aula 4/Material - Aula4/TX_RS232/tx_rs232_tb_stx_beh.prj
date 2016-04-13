@@ -1,0 +1,5 @@
+vhdl isim_temp "src/counter_limit.vhd"
+vhdl isim_temp "src/tx_counters.vhd"
+vhdl isim_temp "src/ShiftRegister.vhd"
+vhdl isim_temp "src/tx_rs232.vhd"
+vhdl isim_temp "src/tx_rs232_tb.vhd"

@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula6/ROM_TX_RX_RAM/ROM_TX_RX_RAM_TB_isim_beh.exe" -prj "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula6/ROM_TX_RX_RAM/ROM_TX_RX_RAM_TB_beh.prj" "work.ROM_TX_RX_RAM_TB" 

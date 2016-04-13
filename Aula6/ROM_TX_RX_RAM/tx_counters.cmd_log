@@ -1,1 +1,0 @@
-vhdtdtfi -prj ROM_TX_RX_RAM -o "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/CLEAN/Aula6/tarefa/ROM_TX_RX_RAM/tx_counters.vhi" -module tx_counters -template C:/Xilinx/14.5/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../../../Aula5/tarefa/TX_RX_RS232/src/counter_limit.vhd -lib work ../../../Aula5/tarefa/TX_RX_RS232/src/tx_counters.vhd 
