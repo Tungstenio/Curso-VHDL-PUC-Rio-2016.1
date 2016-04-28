@@ -1,6 +1,0 @@
-work	"../../RX_RS232/src/rx_rs232_v2.vhd"
-work	"../../TX_RS232/src/ShiftRegister.vhd"
-work	"../../TX_RS232/src/counter_limit.vhd"
-work	"../../TX_RS232/src/tx_counters.vhd"
-work	"../../TX_RS232/src/tx_rs232.vhd"
-work	"tx_rx_rs232.vhd"

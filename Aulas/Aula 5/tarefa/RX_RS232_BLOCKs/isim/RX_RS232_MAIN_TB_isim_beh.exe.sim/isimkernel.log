@@ -1,0 +1,28 @@
+Command line:
+   RX_RS232_MAIN_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56665
+
+Thu Apr 28 12:20:19 2016
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 364.888 Meg
+
+ Total Signals          : 50
+ Total Nets             : 86
+ Total Signal Drivers   : 21
+ Total Blocks           : 9
+ Total Primitive Blocks : 7
+ Total Processes        : 20
+ Total Traceable Variables  : 12
+ Total Scalar Nets and Variables : 466
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 679.461 Meg
+
+Thu Apr 28 12:32:00 2016
+

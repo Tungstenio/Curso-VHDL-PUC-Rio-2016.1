@@ -1,0 +1,1 @@
+vhdtdtfi -prj RX_RS232_BLOCKs -o "C:/Users/aula2/Desktop/Material - Aula4/RX_RS232_BLOCKs/ShiftRegisterSP.vhi" -module ShiftRegisterSP -template C:/Xilinx/14.5/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ShiftRegisterSP.vhd 

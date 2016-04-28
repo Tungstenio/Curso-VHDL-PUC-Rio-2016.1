@@ -1,1 +1,0 @@
-vhdtdtfi -prj tx_rx_rs232 -o "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aula3/TX_RX_RS232/tx_rx_rs232/rx_rs232_v2.vhi" -module rx_rs232_v2 -template C:/Xilinx/14.5/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work ../../RX_RS232/src/rx_rs232_v2.vhd 

@@ -1,0 +1,6 @@
+vhdl work "ShiftRegisterSP.vhd"
+vhdl work "counter_pulse.vhd"
+vhdl work "biestavel.vhd"
+vhdl work "../../../Aula 4/Material - Aula4/tx_rs232_vf/counter_limit.vhd"
+vhdl work "RX_RS232_MAIN.vhd"
+vhdl work "RX_RS232_MAIN_TB.vhd"

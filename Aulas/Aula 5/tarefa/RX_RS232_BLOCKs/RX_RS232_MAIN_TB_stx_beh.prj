@@ -1,0 +1,5 @@
+vhdl isim_temp "ShiftRegisterSP.vhd"
+vhdl isim_temp "counter_pulse.vhd"
+vhdl isim_temp "biestavel.vhd"
+vhdl isim_temp "RX_RS232_MAIN.vhd"
+vhdl isim_temp "RX_RS232_MAIN_TB.vhd"
