@@ -1,0 +1,2 @@
+vhdl work "src/generic_ROM_clk.vhd"
+vhdl work "src/generic_ROM_clk_tb.vhd"

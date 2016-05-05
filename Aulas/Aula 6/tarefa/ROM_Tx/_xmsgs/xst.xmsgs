@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="error" file="HDLParsers" num="0" delta="new" >Cannot rename dependency database for library &quot;work&quot;, file is &quot;xst/work/hdpdeps.ref&quot;, Temporary database file &quot;C:\Users\Opto2\Dropbox\Curso de Extensao VHDL\Em Desenvolvimento\Aula6\tarefa\ROM_Tx\xst\work\xil_2588_14&quot; will remain.  System error message is:  File exists
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">M_CLOCK</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">DATA_MEM_R2_10</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">SRegister</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="3034" delta="new" >In order to maximize performance and save block RAM resources, the small ROM &lt;<arg fmt="%s" index="1">Mrom_ROM_DATA_OUTPUT_R0_mux0001</arg>&gt; will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">DATA_MEM_R2_10</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">shiftregister</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">ROM_DATA_OUTPUT_R0_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">generic_ROM_clk</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ROM_DATA_OUTPUT_R0_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">ROM_DATA_OUTPUT_R0_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">generic_ROM_clk</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ROM_DATA_OUTPUT_R0_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">ROM_DATA_OUTPUT_R0_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">generic_ROM_clk</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;ROM_DATA_OUTPUT_R0_7&gt; </arg>
+</msg>
+
+</messages>
+

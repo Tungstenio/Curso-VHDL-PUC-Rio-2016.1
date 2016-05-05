@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/memoria/generic_ROM_clk_tb_isim_beh.exe" -prj "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/memoria/generic_ROM_clk_tb_beh.prj" "work.generic_ROM_clk_tb" 

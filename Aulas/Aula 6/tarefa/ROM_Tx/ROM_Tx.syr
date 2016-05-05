@@ -1,0 +1,590 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.39 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.39 secs
+ 
+--> Reading design: ROM_Tx.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ROM_Tx.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ROM_Tx"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-4-ft256
+
+---- Source Options
+Top Module Name                    : ROM_Tx
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/counter_limit.vhd" in Library work.
+Entity <counter_limit> compiled.
+Entity <counter_limit> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/counter_pulse.vhd" in Library work.
+Entity <counter_pulse> compiled.
+Entity <counter_pulse> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/tx_counters.vhd" in Library work.
+Entity <tx_counters> compiled.
+Entity <tx_counters> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/ShiftRegister.vhd" in Library work.
+Entity <ShiftRegister> compiled.
+Entity <ShiftRegister> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/memoria/src/generic_ROM_clk.vhd" in Library work.
+Entity <generic_ROM_clk> compiled.
+Entity <generic_ROM_clk> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/tx_rs232.vhd" in Library work.
+Entity <tx_rs232> compiled.
+Entity <tx_rs232> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/biestavel.vhd" in Library work.
+Entity <biestavel> compiled.
+Entity <biestavel> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula6/tarefa/ROM_Tx/ROM_Tx.vhd" in Library work.
+Entity <ROM_Tx> compiled.
+Entity <ROM_Tx> (Architecture <Behavioral>) compiled.
+ERROR:HDLParsers - Cannot rename dependency database for library "work", file is "xst/work/hdpdeps.ref", Temporary database file "C:\Users\Opto2\Dropbox\Curso de Extensao VHDL\Em Desenvolvimento\Aula6\tarefa\ROM_Tx\xst\work\xil_2588_14" will remain.  System error message is:  File exists
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ROM_Tx> in library <work> (architecture <Behavioral>) with generics.
+	ADDRESS_SIZE = 2
+	DATA_SIZE = 8
+
+Analyzing hierarchy for entity <generic_ROM_clk> in library <work> (architecture <Behavioral>) with generics.
+	ADDRESS_SIZE = 2
+	DATA_SIZE = 8
+
+Analyzing hierarchy for entity <tx_rs232> in library <work> (architecture <Behavioral>) with generics.
+	MSG_SIZE = 8
+
+Analyzing hierarchy for entity <biestavel> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <tx_counters> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <shiftregister> in library <work> (architecture <Behavioral>) with generics.
+	SIZE = 11
+
+Analyzing hierarchy for entity <counter_limit> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <counter_pulse> in library <work> (architecture <Behavioral>) with generics.
+	SIZE = 4
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <ROM_Tx> in library <work> (Architecture <Behavioral>).
+	ADDRESS_SIZE = 2
+	DATA_SIZE = 8
+Entity <ROM_Tx> analyzed. Unit <ROM_Tx> generated.
+
+Analyzing generic Entity <generic_ROM_clk> in library <work> (Architecture <Behavioral>).
+	ADDRESS_SIZE = 2
+	DATA_SIZE = 8
+Entity <generic_ROM_clk> analyzed. Unit <generic_ROM_clk> generated.
+
+Analyzing generic Entity <tx_rs232> in library <work> (Architecture <Behavioral>).
+	MSG_SIZE = 8
+Entity <tx_rs232> analyzed. Unit <tx_rs232> generated.
+
+Analyzing Entity <tx_counters> in library <work> (Architecture <Behavioral>).
+Entity <tx_counters> analyzed. Unit <tx_counters> generated.
+
+Analyzing Entity <counter_limit> in library <work> (Architecture <Behavioral>).
+Entity <counter_limit> analyzed. Unit <counter_limit> generated.
+
+Analyzing generic Entity <counter_pulse> in library <work> (Architecture <Behavioral>).
+	SIZE = 4
+Entity <counter_pulse> analyzed. Unit <counter_pulse> generated.
+
+Analyzing generic Entity <shiftregister> in library <work> (Architecture <Behavioral>).
+	SIZE = 11
+Entity <shiftregister> analyzed. Unit <shiftregister> generated.
+
+Analyzing Entity <biestavel> in library <work> (Architecture <Behavioral>).
+Entity <biestavel> analyzed. Unit <biestavel> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <generic_ROM_clk>.
+    Related source file is "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/memoria/src/generic_ROM_clk.vhd".
+    Found 4x8-bit ROM for signal <ROM_DATA_OUTPUT_R0$mux0001> created at line 51.
+    Found 8-bit register for signal <ROM_DATA_OUTPUT_R0>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <generic_ROM_clk> synthesized.
+
+
+Synthesizing Unit <biestavel>.
+    Related source file is "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/biestavel.vhd".
+    Found 1-bit register for signal <PROCESSING_R2>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <biestavel> synthesized.
+
+
+Synthesizing Unit <shiftregister>.
+    Related source file is "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/ShiftRegister.vhd".
+    Found 11-bit register for signal <DATA_MEM_R2>.
+    Found 1-bit register for signal <DATA_OUT_R2>.
+    Summary:
+	inferred  12 D-type flip-flop(s).
+Unit <shiftregister> synthesized.
+
+
+Synthesizing Unit <counter_limit>.
+    Related source file is "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/counter_limit.vhd".
+    Found 16-bit up counter for signal <BAUD_COUNTER>.
+    Found 16-bit subtractor for signal <BAUD_FLAG$addsub0000> created at line 47.
+    Found 16-bit comparator equal for signal <BAUD_FLAG$cmp_eq0000> created at line 47.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <counter_limit> synthesized.
+
+
+Synthesizing Unit <counter_pulse>.
+    Related source file is "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/counter_pulse.vhd".
+    Found 4-bit up counter for signal <COUNTER>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <counter_pulse> synthesized.
+
+
+Synthesizing Unit <tx_counters>.
+    Related source file is "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/tx_counters.vhd".
+WARNING:Xst:1780 - Signal <M_CLOCK> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <HOLD_TRANSMISSION>.
+    Found 1-bit register for signal <M_DONE_R1>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <tx_counters> synthesized.
+
+
+Synthesizing Unit <tx_rs232>.
+    Related source file is "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/tx_rs232.vhd".
+    Found 1-bit register for signal <TRANSMIT_R2>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <tx_rs232> synthesized.
+
+
+Synthesizing Unit <ROM_Tx>.
+    Related source file is "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula6/tarefa/ROM_Tx/ROM_Tx.vhd".
+    Found 3-bit up counter for signal <COUNTER>.
+    Found 2-bit register for signal <ROM_DATA_ADDRESS>.
+    Found 2-bit adder for signal <ROM_DATA_ADDRESS$add0000> created at line 129.
+    Found 1-bit register for signal <TX_FLAG>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <ROM_Tx> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x8-bit ROM                                           : 1
+# Adders/Subtractors                                   : 2
+ 16-bit subtractor                                     : 1
+ 2-bit adder                                           : 1
+# Counters                                             : 3
+ 16-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 9
+ 1-bit register                                        : 6
+ 11-bit register                                       : 1
+ 2-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 1
+ 16-bit comparator equal                               : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1426 - The value init of the FF/Latch DATA_MEM_R2_10 hinder the constant cleaning in the block SRegister.
+   You should achieve better results by setting this init to 1.
+
+Synthesizing (advanced) Unit <generic_ROM_clk>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_ROM_DATA_OUTPUT_R0_mux0001> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <generic_ROM_clk> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 4x8-bit ROM                                           : 1
+# Adders/Subtractors                                   : 2
+ 16-bit subtractor                                     : 1
+ 2-bit adder                                           : 1
+# Counters                                             : 3
+ 16-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 27
+ Flip-Flops                                            : 27
+# Comparators                                          : 1
+ 16-bit comparator equal                               : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch DATA_MEM_R2_10 hinder the constant cleaning in the block shiftregister.
+   You should achieve better results by setting this init to 1.
+INFO:Xst:2261 - The FF/Latch <ROM_DATA_OUTPUT_R0_3> in Unit <generic_ROM_clk> is equivalent to the following FF/Latch, which will be removed : <ROM_DATA_OUTPUT_R0_6> 
+INFO:Xst:2261 - The FF/Latch <ROM_DATA_OUTPUT_R0_2> in Unit <generic_ROM_clk> is equivalent to the following FF/Latch, which will be removed : <ROM_DATA_OUTPUT_R0_4> 
+INFO:Xst:2261 - The FF/Latch <ROM_DATA_OUTPUT_R0_5> in Unit <generic_ROM_clk> is equivalent to the following FF/Latch, which will be removed : <ROM_DATA_OUTPUT_R0_7> 
+
+Optimizing unit <ROM_Tx> ...
+
+Optimizing unit <generic_ROM_clk> ...
+
+Optimizing unit <shiftregister> ...
+
+Optimizing unit <tx_counters> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ROM_Tx, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 47
+ Flip-Flops                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ROM_Tx.ngr
+Top Level Output File Name         : ROM_Tx
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 38
+
+Cell Usage :
+# BELS                             : 144
+#      GND                         : 1
+#      INV                         : 21
+#      LUT1                        : 16
+#      LUT2                        : 8
+#      LUT3                        : 15
+#      LUT4                        : 12
+#      MUXCY                       : 38
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 47
+#      FD                          : 2
+#      FDE                         : 15
+#      FDR                         : 20
+#      FDRE                        : 7
+#      FDRS                        : 2
+#      FDSE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 37
+#      IBUF                        : 17
+#      OBUF                        : 20
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200eft256-4 
+
+ Number of Slices:                       40  out of   8672     0%  
+ Number of Slice Flip Flops:             47  out of  17344     0%  
+ Number of 4 input LUTs:                 72  out of  17344     0%  
+ Number of IOs:                          38
+ Number of bonded IOBs:                  38  out of    190    20%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+LOCAL_CLOCK                        | BUFGP                  | 47    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.362ns (Maximum Frequency: 157.183MHz)
+   Minimum input arrival time before clock: 10.082ns
+   Maximum output required time after clock: 7.184ns
+   Maximum combinational path delay: 6.167ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'LOCAL_CLOCK'
+  Clock period: 6.362ns (frequency: 157.183MHz)
+  Total number of paths / destination ports: 819 / 98
+-------------------------------------------------------------------------
+Delay:               6.362ns (Levels of Logic = 10)
+  Source:            Inst_tx_rs232/TxCounters/b_count/BAUD_COUNTER_1 (FF)
+  Destination:       Inst_tx_rs232/TxCounters/b_count/BAUD_COUNTER_15 (FF)
+  Source Clock:      LOCAL_CLOCK rising
+  Destination Clock: LOCAL_CLOCK rising
+
+  Data Path: Inst_tx_rs232/TxCounters/b_count/BAUD_COUNTER_1 to Inst_tx_rs232/TxCounters/b_count/BAUD_COUNTER_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.482  Inst_tx_rs232/TxCounters/b_count/BAUD_COUNTER_1 (Inst_tx_rs232/TxCounters/b_count/BAUD_COUNTER_1)
+     LUT4:I2->O            1   0.704   0.000  Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_lut<0> (Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_cy<0> (Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_cy<1> (Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_cy<2> (Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_cy<3> (Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_cy<4> (Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_cy<5> (Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_cy<6> (Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_cy<6>)
+     MUXCY:CI->O           7   0.331   0.787  Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_cy<7> (Inst_tx_rs232/TxCounters/BAUD_FLAG)
+     LUT2:I1->O           16   0.704   1.034  Inst_tx_rs232/TxCounters/b_count/BAUD_COUNTER_or00001 (Inst_tx_rs232/TxCounters/b_count/BAUD_COUNTER_or0000)
+     FDR:R                     0.911          Inst_tx_rs232/TxCounters/b_count/BAUD_COUNTER_0
+    ----------------------------------------
+    Total                      6.362ns (4.059ns logic, 2.303ns route)
+                                       (63.8% logic, 36.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'LOCAL_CLOCK'
+  Total number of paths / destination ports: 4354 / 34
+-------------------------------------------------------------------------
+Offset:              10.082ns (Levels of Logic = 21)
+  Source:            K<0> (PAD)
+  Destination:       Inst_tx_rs232/TxCounters/b_count/BAUD_COUNTER_15 (FF)
+  Destination Clock: LOCAL_CLOCK rising
+
+  Data Path: K<0> to Inst_tx_rs232/TxCounters/b_count/BAUD_COUNTER_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.595  K_0_IBUF (K_0_IBUF)
+     LUT1:I0->O            1   0.704   0.000  Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<0>_rt (Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<0> (Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<1> (Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<2> (Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<3> (Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<4> (Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<5> (Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<6> (Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<7> (Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<8> (Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<9> (Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<10> (Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<11> (Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<12> (Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<13> (Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<13>)
+     MUXCY:CI->O           0   0.059   0.000  Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<14> (Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_cy<14>)
+     XORCY:CI->O           1   0.804   0.595  Inst_tx_rs232/TxCounters/b_count/Msub_BAUD_FLAG_addsub0000_xor<15> (Inst_tx_rs232/TxCounters/b_count/BAUD_FLAG_addsub0000<15>)
+     LUT4:I0->O            1   0.704   0.000  Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_lut<7> (Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_lut<7>)
+     MUXCY:S->O            7   0.736   0.787  Inst_tx_rs232/TxCounters/b_count/Mcompar_BAUD_FLAG_cmp_eq0000_cy<7> (Inst_tx_rs232/TxCounters/BAUD_FLAG)
+     LUT2:I1->O           16   0.704   1.034  Inst_tx_rs232/TxCounters/b_count/BAUD_COUNTER_or00001 (Inst_tx_rs232/TxCounters/b_count/BAUD_COUNTER_or0000)
+     FDR:R                     0.911          Inst_tx_rs232/TxCounters/b_count/BAUD_COUNTER_0
+    ----------------------------------------
+    Total                     10.082ns (7.071ns logic, 3.011ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'LOCAL_CLOCK'
+  Total number of paths / destination ports: 23 / 17
+-------------------------------------------------------------------------
+Offset:              7.184ns (Levels of Logic = 3)
+  Source:            COUNTER_0 (FF)
+  Destination:       DEBUG_TRANSMIT (PAD)
+  Source Clock:      LOCAL_CLOCK rising
+
+  Data Path: COUNTER_0 to DEBUG_TRANSMIT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             6   0.591   0.844  COUNTER_0 (COUNTER_0)
+     LUT3:I0->O            2   0.704   0.622  ROM_DONE_cmp_eq00001 (ROM_DONE)
+     LUT3:I0->O            2   0.704   0.447  TRANSMIT1 (DEBUG_TRANSMIT_OBUF)
+     OBUF:I->O                 3.272          DEBUG_TRANSMIT_OBUF (DEBUG_TRANSMIT)
+    ----------------------------------------
+    Total                      7.184ns (5.271ns logic, 1.913ns route)
+                                       (73.4% logic, 26.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               6.167ns (Levels of Logic = 3)
+  Source:            START (PAD)
+  Destination:       DEBUG_TRANSMIT (PAD)
+
+  Data Path: START to DEBUG_TRANSMIT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.526  START_IBUF (START_IBUF)
+     LUT3:I1->O            2   0.704   0.447  TRANSMIT1 (DEBUG_TRANSMIT_OBUF)
+     OBUF:I->O                 3.272          DEBUG_TRANSMIT_OBUF (DEBUG_TRANSMIT)
+    ----------------------------------------
+    Total                      6.167ns (5.194ns logic, 0.973ns route)
+                                       (84.2% logic, 15.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.92 secs
+ 
+--> 
+
+Total memory usage is 307352 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

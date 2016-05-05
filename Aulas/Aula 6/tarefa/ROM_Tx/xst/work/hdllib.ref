@@ -1,0 +1,16 @@
+AR shiftregister behavioral "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/ShiftRegister.vhd" sub00/vhpl07 1462305511
+EN counter_limit NULL "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/counter_limit.vhd" sub00/vhpl00 1462305504
+AR rom_tx behavioral "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula6/tarefa/ROM_Tx/ROM_Tx.vhd" sub00/vhpl15 1462305519
+AR generic_rom_clk behavioral "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/memoria/src/generic_ROM_clk.vhd" sub00/vhpl09 1462305513
+AR tx_rs232 behavioral "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/tx_rs232.vhd" sub00/vhpl11 1462305515
+EN shiftregister NULL "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/ShiftRegister.vhd" sub00/vhpl06 1462305510
+AR counter_pulse behavioral "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/counter_pulse.vhd" sub00/vhpl03 1462305507
+EN generic_rom_clk NULL "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/memoria/src/generic_ROM_clk.vhd" sub00/vhpl08 1462305512
+EN biestavel NULL "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/biestavel.vhd" sub00/vhpl12 1462305516
+AR biestavel behavioral "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/biestavel.vhd" sub00/vhpl13 1462305517
+AR counter_limit behavioral "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/counter_limit.vhd" sub00/vhpl01 1462305505
+AR tx_counters behavioral "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/tx_counters.vhd" sub00/vhpl05 1462305509
+EN rom_tx NULL "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula6/tarefa/ROM_Tx/ROM_Tx.vhd" sub00/vhpl14 1462305518
+EN counter_pulse NULL "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/counter_pulse.vhd" sub00/vhpl02 1462305506
+EN tx_counters NULL "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/tx_counters.vhd" sub00/vhpl04 1462305508
+EN tx_rs232 NULL "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/tx_rs232.vhd" sub00/vhpl10 1462305514

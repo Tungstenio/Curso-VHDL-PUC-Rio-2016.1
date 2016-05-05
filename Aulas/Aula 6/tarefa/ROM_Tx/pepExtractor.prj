@@ -1,0 +1,8 @@
+work	"../../../../Aulas/Aula 5/TX_RX/ShiftRegister.vhd"
+work	"../../../../Aulas/Aula 5/TX_RX/biestavel.vhd"
+work	"../../../../Aulas/Aula 5/TX_RX/counter_limit.vhd"
+work	"../../../../Aulas/Aula 5/TX_RX/counter_pulse.vhd"
+work	"../../../../Aulas/Aula 5/TX_RX/tx_counters.vhd"
+work	"../../../../Aulas/Aula 5/TX_RX/tx_rs232.vhd"
+work	"../../../../Aulas/Aula 5/memoria/src/generic_ROM_clk.vhd"
+work	"ROM_Tx.vhd"

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula6/tarefa/ROM_Tx/ROM_Tx.xst" -ofn "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula6/tarefa/ROM_Tx/ROM_Tx.syr" 
+netgen -intstyle ise -ar Structure -tm ROM_Tx -w -dir netgen/synthesis -ofmt vhdl -sim ROM_Tx.ngc ROM_Tx_synthesis.vhd 
