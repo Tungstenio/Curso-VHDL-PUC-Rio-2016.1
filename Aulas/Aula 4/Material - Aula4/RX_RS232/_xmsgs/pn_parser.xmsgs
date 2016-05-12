@@ -8,7 +8,16 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 4/Material - Aula4/RX_RS232/src/rx_rs232_v2_tb.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 4/Material - Aula4/RX_RS232/src/ShiftRegister.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 4/Material - Aula4/RX_RS232/src/counter_pulse.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 4/Material - Aula4/RX_RS232/src/rx_counters.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 4/Material - Aula4/RX_RS232/src/rx_rs232_v2.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

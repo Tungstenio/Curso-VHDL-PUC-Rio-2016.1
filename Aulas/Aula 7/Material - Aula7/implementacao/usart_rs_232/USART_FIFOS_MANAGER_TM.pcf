@@ -1,0 +1,526 @@
+//! **************************************************************************
+// Written by: Map P.58f on Wed May 11 17:49:06 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "LED_VECTOR<0>" LOCATE = SITE "P14" LEVEL 1;
+COMP "LED_VECTOR<1>" LOCATE = SITE "R13" LEVEL 1;
+COMP "LED_VECTOR<2>" LOCATE = SITE "T13" LEVEL 1;
+COMP "LED_VECTOR<3>" LOCATE = SITE "P15" LEVEL 1;
+COMP "hi_inout<0>" LOCATE = SITE "M8" LEVEL 1;
+COMP "hi_inout<1>" LOCATE = SITE "L8" LEVEL 1;
+COMP "hi_inout<2>" LOCATE = SITE "T8" LEVEL 1;
+COMP "hi_inout<3>" LOCATE = SITE "N8" LEVEL 1;
+COMP "hi_inout<4>" LOCATE = SITE "P8" LEVEL 1;
+COMP "hi_inout<5>" LOCATE = SITE "P9" LEVEL 1;
+COMP "hi_inout<6>" LOCATE = SITE "N9" LEVEL 1;
+COMP "hi_inout<7>" LOCATE = SITE "M9" LEVEL 1;
+COMP "hi_inout<8>" LOCATE = SITE "R11" LEVEL 1;
+COMP "hi_inout<9>" LOCATE = SITE "R6" LEVEL 1;
+COMP "RX_IN" LOCATE = SITE "K12" LEVEL 1;
+COMP "hi_out<0>" LOCATE = SITE "P5" LEVEL 1;
+COMP "hi_out<1>" LOCATE = SITE "N10" LEVEL 1;
+COMP "hi_inout<10>" LOCATE = SITE "T5" LEVEL 1;
+COMP "hi_inout<11>" LOCATE = SITE "T4" LEVEL 1;
+COMP "hi_inout<12>" LOCATE = SITE "R4" LEVEL 1;
+COMP "hi_inout<13>" LOCATE = SITE "M6" LEVEL 1;
+COMP "hi_inout<14>" LOCATE = SITE "N6" LEVEL 1;
+COMP "hi_inout<15>" LOCATE = SITE "P6" LEVEL 1;
+COMP "LOCAL_CLOCK" LOCATE = SITE "A8" LEVEL 1;
+COMP "TX_OUT" LOCATE = SITE "K13" LEVEL 1;
+COMP "hi_in<0>" LOCATE = SITE "F9" LEVEL 1;
+COMP "hi_in<1>" LOCATE = SITE "N5" LEVEL 1;
+COMP "hi_in<2>" LOCATE = SITE "T9" LEVEL 1;
+COMP "hi_in<3>" LOCATE = SITE "M7" LEVEL 1;
+COMP "hi_in<4>" LOCATE = SITE "P12" LEVEL 1;
+COMP "hi_in<5>" LOCATE = SITE "P11" LEVEL 1;
+COMP "hi_in<6>" LOCATE = SITE "P13" LEVEL 1;
+COMP "hi_in<7>" LOCATE = SITE "N12" LEVEL 1;
+NET "LOCAL_CLOCK_BUFGP/IBUFG" BEL "LOCAL_CLOCK_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+PIN
+        USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x9.ram.A_pins<12>
+        = BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x9.ram.A"
+        PINNAME CLKA;
+PIN
+        USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A_pins<12>
+        = BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A"
+        PINNAME CLKA;
+TIMEGRP LOCAL_CLOCK = BEL "HOLD_SIGNAL_3" BEL "HOLD_SIGNAL_1" BEL
+        "HOLD_SIGNAL_2" BEL "USART_MANAGER/RX/SHIFT_LEFT_R2" BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN_COMM_HOST/FifoState_FSM_FFd2" BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN_COMM_HOST/HOST_POSITIVE_ACK" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_3" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_2" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_1" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_0" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/BAUD_COUNTER_8" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/BAUD_COUNTER_10" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/BAUD_COUNTER_7" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/BAUD_COUNTER_6" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/BAUD_COUNTER_5" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/BAUD_COUNTER_4" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/BAUD_COUNTER_3" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/BAUD_COUNTER_2" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/BAUD_COUNTER_1" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/BAUD_COUNTER_0" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/HOLD_RECEPTION" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/BAUD_COUNTER_9" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/BAUD_COUNTER_11" BEL
+        "USART_MANAGER/RX/SHIFT_MANAGER/BAUD_COUNTER_12" BEL
+        "USART_MANAGER/RX/RX_SHIFTER/DATA_7" BEL
+        "USART_MANAGER/RX/RX_SHIFTER/DATA_6" BEL
+        "USART_MANAGER/RX/RX_SHIFTER/DATA_5" BEL
+        "USART_MANAGER/RX/RX_SHIFTER/DATA_4" BEL
+        "USART_MANAGER/RX/RX_SHIFTER/DATA_3" BEL
+        "USART_MANAGER/RX/RX_SHIFTER/DATA_2" BEL
+        "USART_MANAGER/RX/RX_SHIFTER/DATA_1" BEL
+        "USART_MANAGER/RX/RX_SHIFTER/DATA_0" BEL
+        "USART_MANAGER/TX/TX_SHIFTER/DATA_0" BEL
+        "USART_MANAGER/TX/TX_SHIFTER/DATA_1" BEL
+        "USART_MANAGER/TX/TX_SHIFTER/DATA_2" BEL
+        "USART_MANAGER/TX/TX_SHIFTER/DATA_3" BEL
+        "USART_MANAGER/TX/TX_SHIFTER/DATA_4" BEL
+        "USART_MANAGER/TX/TX_SHIFTER/DATA_5" BEL
+        "USART_MANAGER/TX/TX_SHIFTER/DATA_6" BEL
+        "USART_MANAGER/TX/TX_SHIFTER/DATA_7" BEL
+        "USART_MANAGER/TX/TX_SHIFTER/DATA_8" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/HOLD_TRANSMISSION" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_0" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_1" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_2" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_3" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_4" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_5" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_6" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_7" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_8" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_9" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_10" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_11" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_12" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/MESSAGE_COUNTER_0" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/MESSAGE_COUNTER_1" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/MESSAGE_COUNTER_2" BEL
+        "USART_MANAGER/TX/SHIFT_MANAGER/MESSAGE_COUNTER_3" BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT_COMM_HOST/FIFO_OUT_WRITE_REQUEST" BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT_COMM_HOST/UnloadState_FSM_FFd1" BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT_COMM_HOST/UnloadState_FSM_FFd2" BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_UNLOAD_LENGTH_10" BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_UNLOAD_LENGTH_9" BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_UNLOAD_LENGTH_8" BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_UNLOAD_LENGTH_7" BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_UNLOAD_LENGTH_6" BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_UNLOAD_LENGTH_5" BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_UNLOAD_LENGTH_4" BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_UNLOAD_LENGTH_3" BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_UNLOAD_LENGTH_2" BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_UNLOAD_LENGTH_1" BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_UNLOAD_LENGTH_0" BEL
+        "USART_MANAGER/TX/TXState_FSM_FFd2" BEL "USART_MANAGER/TX/TX_ON" BEL
+        "USART_MANAGER/TX/TXState_FSM_FFd1" BEL "USART_MANAGER/TX/ENABLE_TX"
+        BEL "USART_MANAGER/TX/Mshreg_ENABLE_TX_R3/SRL16E" BEL
+        "USART_MANAGER/TX/ENABLE_TX_R3" BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_fb_i"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d2"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg_d1"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_asreg"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_9"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_8"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_10"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_6"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_5"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_7"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_3"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_2"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_4"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_0"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_1"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_10"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_9"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_8"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_7"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_6"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_5"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_4"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_3"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_2"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_1"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/rpntr/count_d1_0"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_10"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_9"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_8"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_7"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_6"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_5"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_4"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_3"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_2"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_1"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_0"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_2"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_3"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_4"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_5"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_6"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_7"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_8"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_9"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_0"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_1"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_2"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_3"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_4"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_5"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_6"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_7"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_8"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_9"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_9"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_8"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_7"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_6"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_5"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_4"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_3"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_2"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_1"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_bin_0"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_10"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_9"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_8"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_7"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_6"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_5"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_4"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_3"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_2"
+        BEL
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc_1"
+        PIN
+        "USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp18x9.ram.A_pins<12>"
+        BEL "OK_MANAGER/TRIGGERS_OUT/ep_trigger0_0" BEL
+        "OK_MANAGER/TRIGGERS_OUT/eptrig_0" BEL
+        "OK_MANAGER/TRIGGERS_OUT/eptrig_1" BEL
+        "OK_MANAGER/TRIGGERS_OUT/eptrig_2" BEL
+        "OK_MANAGER/TRIGGERS_OUT/eptrig_3" BEL
+        "OK_MANAGER/TRIGGERS_OUT/eptrig_4" BEL
+        "OK_MANAGER/TRIGGERS_OUT/eptrig_5" BEL
+        "OK_MANAGER/TRIGGERS_OUT/eptrig_6" BEL
+        "OK_MANAGER/TRIGGERS_OUT/eptrig_7" BEL
+        "OK_MANAGER/TRIGGERS_OUT/eptrig_8" BEL
+        "OK_MANAGER/TRIGGERS_OUT/eptrig_9" BEL
+        "OK_MANAGER/TRIGGERS_OUT/eptrig_10" BEL
+        "OK_MANAGER/TRIGGERS_OUT/eptrig_11" BEL
+        "OK_MANAGER/TRIGGERS_OUT/eptrig_12" BEL
+        "OK_MANAGER/TRIGGERS_OUT/eptrig_13" BEL
+        "OK_MANAGER/TRIGGERS_OUT/eptrig_14" BEL
+        "OK_MANAGER/TRIGGERS_OUT/eptrig_15" BEL
+        "OK_MANAGER/TRIGGERS_OUT/captrig0" BEL
+        "OK_MANAGER/TRIGGERS_OUT/captrig1" BEL
+        "OK_MANAGER/TRIGGERS_OUT/trighold_0" BEL
+        "OK_MANAGER/TRIGGERS_OUT/trighold_1" BEL
+        "OK_MANAGER/TRIGGERS_OUT/trighold_2" BEL
+        "OK_MANAGER/TRIGGERS_OUT/trighold_3" BEL
+        "OK_MANAGER/TRIGGERS_OUT/trighold_4" BEL
+        "OK_MANAGER/TRIGGERS_OUT/trighold_5" BEL
+        "OK_MANAGER/TRIGGERS_OUT/trighold_6" BEL
+        "OK_MANAGER/TRIGGERS_OUT/trighold_7" BEL
+        "OK_MANAGER/TRIGGERS_OUT/trighold_8" BEL
+        "OK_MANAGER/TRIGGERS_OUT/trighold_9" BEL
+        "OK_MANAGER/TRIGGERS_OUT/trighold_10" BEL
+        "OK_MANAGER/TRIGGERS_OUT/trighold_11" BEL
+        "OK_MANAGER/TRIGGERS_OUT/trighold_12" BEL
+        "OK_MANAGER/TRIGGERS_OUT/trighold_13" BEL
+        "OK_MANAGER/TRIGGERS_OUT/trighold_14" BEL
+        "OK_MANAGER/TRIGGERS_OUT/trighold_15" BEL
+        "OK_MANAGER/TRIGGERS_IN/trigff0_0" BEL
+        "OK_MANAGER/TRIGGERS_IN/trigff0_1" BEL
+        "OK_MANAGER/TRIGGERS_IN/trigff0_3" BEL
+        "OK_MANAGER/TRIGGERS_IN/trigff0_4" BEL
+        "OK_MANAGER/TRIGGERS_IN/trigff1_0" BEL
+        "OK_MANAGER/TRIGGERS_IN/trigff1_1" BEL
+        "OK_MANAGER/TRIGGERS_IN/trigff1_3" BEL
+        "OK_MANAGER/TRIGGERS_IN/trigff1_4" BEL
+        "OK_MANAGER/TRIGGERS_IN/ep_trigger_0" BEL
+        "OK_MANAGER/TRIGGERS_IN/ep_trigger_1" BEL
+        "OK_MANAGER/TRIGGERS_IN/ep_trigger_3" BEL
+        "OK_MANAGER/TRIGGERS_IN/ep_trigger_4" BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d3"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d2"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_asreg_d1"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d1"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_10"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_9"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_8"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_7"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_6"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_5"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_4"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_3"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_2"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_1"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_0"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_2"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_0"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_1"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_5"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_3"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_4"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_8"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_6"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_7"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_9"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_10"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_10"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_9"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_8"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_6"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_5"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_7"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_3"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_2"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_4"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_1"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_0"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_10"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_9"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_8"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_7"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_6"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_5"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_4"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_3"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_2"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_1"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d2_0"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_1"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_2"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_3"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_4"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_5"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_6"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_7"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_8"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_9"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_0"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_1"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_2"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_3"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_4"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_5"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_6"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_7"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_8"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_9"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_9"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_8"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_7"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_6"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_5"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_4"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_3"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_2"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_1"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_bin_0"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_10"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_9"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_8"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_7"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_6"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_5"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_4"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_3"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_2"
+        BEL
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_1"
+        PIN
+        "USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A_pins<12>"
+        BEL "LOCAL_CLOCK_BUFGP/BUFG.GCLKMUX" BEL "LOCAL_CLOCK_BUFGP/BUFG";
+TS_LOCAL_CLOCK = PERIOD TIMEGRP "LOCAL_CLOCK" 20 ns HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="LIT" num="243" filtered="1" delta="new" >Logical network <arg fmt="%s" index="1">OK_MANAGER/ok1&lt;30&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" filtered="1" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">30</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i,
+USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i&lt;9&gt;,
+USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i&lt;8&gt;,
+USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i&lt;7&gt;,
+USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i&lt;6&gt;</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="info" file="MapLib" num="562" filtered="1" delta="new" >No environment variables are currently set.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" filtered="1" delta="new" >Signal <arg fmt="%s" index="1">i2c_sda</arg> connected to top level port <arg fmt="%s" index="2">i2c_sda</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" filtered="1" delta="new" >Signal <arg fmt="%s" index="1">i2c_scl</arg> connected to top level port <arg fmt="%s" index="2">i2c_scl</arg> has been removed.
+</msg>
+
+<msg type="info" file="LIT" num="244" filtered="1" delta="new" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="warning" file="Pack" num="249" filtered="1" delta="new" >The following adjacent carry multiplexers occupy different slice components.  The resulting carry chain will have suboptimal timing.
+	<arg fmt="%s" index="1">USART_MANAGER/TX/SHIFT_MANAGER/Mcompar_BAUD_FLAG_cmp_eq0000_cy&lt;6&gt;</arg>
+	<arg fmt="%s" index="2">USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy&lt;0&gt;</arg>
+</msg>
+
+</messages>
+

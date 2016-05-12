@@ -1,0 +1,7 @@
+vhdtdtfi -lib work RX_COUNTERS.vhd -prj USART_RS_232 -o RX_COUNTERS.spl -module RX_COUNTERS -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e RX_COUNTERS.spl {C:/Users/Opto2/Dropbox/PROJETOS/XEM3005/STD PROJECTS/EXP1_USART_RS232/On-Board Tests/USART_RS_232/RX_COUNTERS.sym} 
+vhdtdtfi -prj USART_RS_232 -o "C:/Users/Opto2/Dropbox/PROJETOS/XEM3005/STD PROJECTS/EXP1_USART_RS232/On-Board Tests/USART_RS_232/RX_COUNTERS.vhi" -module RX_COUNTERS -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work RX_COUNTERS.vhd 
+vhdtdtfi -lib work RX_COUNTERS.vhd -prj USART_RS_232 -o RX_COUNTERS.spl -module RX_COUNTERS -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e RX_COUNTERS.spl {C:/Users/Opto2/Dropbox/PROJETOS/XEM3005/STD PROJECTS/EXP1_USART_RS232/On-Board Tests/USART_RS_232/RX_COUNTERS.sym} 
+vhdtdtfi -lib work RX_COUNTERS.vhd -prj USART_RS_232 -o RX_COUNTERS.spl -module RX_COUNTERS -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e RX_COUNTERS.spl {C:/Users/Opto2/Dropbox/PROJETOS/XEM3005/STD PROJECTS/EXP1_USART_RS232/On-Board Tests/USART_RS_232/RX_COUNTERS.sym} 

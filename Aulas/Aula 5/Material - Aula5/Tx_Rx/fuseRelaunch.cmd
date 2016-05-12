@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/Tx_Rx_Tb_isim_beh.exe" -prj "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/TX_RX/Tx_Rx_Tb_beh.prj" "work.Tx_Rx_Tb" 

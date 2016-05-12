@@ -1,0 +1,5 @@
+work	"ShiftRegister_TX.vhd"
+work	"biestavel.vhd"
+work	"counter_limit.vhd"
+work	"counter_pulse.vhd"
+work	"tx_rs232_vf.vhd"

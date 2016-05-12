@@ -1,0 +1,987 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: USART_FIFOS_MANAGER_TM.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "USART_FIFOS_MANAGER_TM.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "USART_FIFOS_MANAGER_TM"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-4-ft256
+
+---- Source Options
+Top Module Name                    : USART_FIFOS_MANAGER_TM
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/USART_FIFO_OUT_CPU.vhd" in Library work.
+Entity <USART_FIFO_OUT_CPU> compiled.
+Entity <USART_FIFO_OUT_CPU> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/USART_FIFO_IN_CPU.vhd" in Library work.
+Entity <USART_FIFO_IN_CPU> compiled.
+Entity <USART_FIFO_IN_CPU> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/TX_COUNTERS.vhd" in Library work.
+Entity <TX_COUNTERS> compiled.
+Entity <TX_COUNTERS> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/RS_232_TX_SHIFTER.vhd" in Library work.
+Entity <RS_232_TX_SHIFTER> compiled.
+Entity <RS_232_TX_SHIFTER> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/RX_COUNTERS.vhd" in Library work.
+Entity <RX_COUNTERS> compiled.
+Entity <RX_COUNTERS> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/RS_232_RX_SHIFTER.vhd" in Library work.
+Entity <RS_232_RX_SHIFTER> compiled.
+Entity <RS_232_RX_SHIFTER> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/USART_FIFO_IN_MANAGER.vhd" in Library work.
+Entity <USART_FIFO_IN_MANAGER> compiled.
+Entity <USART_FIFO_IN_MANAGER> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/USART_FIFO_OUT_MANAGER.vhd" in Library work.
+Entity <USART_FIFO_OUT_MANAGER> compiled.
+Entity <USART_FIFO_OUT_MANAGER> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/RS_232_RX.vhd" in Library work.
+Entity <RS_232_RX> compiled.
+Entity <RS_232_RX> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/RS_232_TX.vhd" in Library work.
+Entity <RS_232_TX> compiled.
+Entity <RS_232_TX> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/okLibrary.vhd" in Library work.
+Entity <okHost> compiled.
+Entity <okHost> (Architecture <archHost>) compiled.
+Entity <okWireOR> compiled.
+Entity <okWireOR> (Architecture <archWireOR>) compiled.
+Package <FRONTPANEL> compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/USART_OPALKELLY_INTERFACE.vhd" in Library work.
+Entity <USART_OPALKELLY_INTERFACE> compiled.
+Entity <USART_OPALKELLY_INTERFACE> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/USART_MANAGER_TM.vhd" in Library work.
+Entity <USART_MANAGER_TM> compiled.
+Entity <USART_MANAGER_TM> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/USART_FIFOS_TM.vhd" in Library work.
+Entity <USART_FIFOS_TM> compiled.
+Entity <USART_FIFOS_TM> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/USART_FIFOS_MANAGER_TM.vhd" in Library work.
+Entity <USART_FIFOS_MANAGER_TM> compiled.
+Entity <USART_FIFOS_MANAGER_TM> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <USART_FIFOS_MANAGER_TM> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <USART_OPALKELLY_INTERFACE> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <USART_MANAGER_TM> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <USART_FIFOS_TM> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <okHost> in library <work> (architecture <archHost>).
+
+Analyzing hierarchy for entity <okWireOR> in library <work> (architecture <archWireOR>) with generics.
+	N = 5
+
+Analyzing hierarchy for entity <RS_232_RX> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <RS_232_TX> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <USART_FIFO_IN_MANAGER> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <USART_FIFO_OUT_MANAGER> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <RX_COUNTERS> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <RS_232_RX_SHIFTER> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <TX_COUNTERS> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <RS_232_TX_SHIFTER> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <USART_FIFO_IN_CPU> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <USART_FIFO_OUT_CPU> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <USART_FIFOS_MANAGER_TM> in library <work> (Architecture <Behavioral>).
+Entity <USART_FIFOS_MANAGER_TM> analyzed. Unit <USART_FIFOS_MANAGER_TM> generated.
+
+Analyzing Entity <USART_OPALKELLY_INTERFACE> in library <work> (Architecture <Behavioral>).
+Entity <USART_OPALKELLY_INTERFACE> analyzed. Unit <USART_OPALKELLY_INTERFACE> generated.
+
+Analyzing Entity <okHost> in library <work> (Architecture <archHost>).
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <clkbuf> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf0> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf0> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf0> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf0> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf0> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf0> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf0> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf1> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf1> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf1> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf1> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf1> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf1> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf1> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf2> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf2> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf2> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf2> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf2> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf2> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf2> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf3> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf3> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf3> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf3> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf3> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf3> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf3> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf4> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf4> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf4> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf4> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf4> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf4> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf4> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf5> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf5> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf5> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf5> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf5> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf5> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf5> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf6> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf6> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf6> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf6> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf6> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf6> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf6> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf7> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf7> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf7> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf7> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf7> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf7> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf7> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf8> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf8> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf8> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf8> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf8> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf8> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf8> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf9> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf9> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf9> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf9> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf9> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf9> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf9> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf10> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf10> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf10> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf10> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf10> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf10> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf10> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf11> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf11> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf11> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf11> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf11> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf11> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf11> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf12> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf12> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf12> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf12> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf12> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf12> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf12> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf13> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf13> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf13> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf13> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf13> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf13> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf13> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf14> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf14> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf14> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf14> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf14> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf14> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf14> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <iobuf15> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <iobuf15> in unit <okHost>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <iobuf15> in unit <okHost>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <iobuf15> in unit <okHost>.
+    Set user-defined property "IFD_DELAY_VALUE =  AUTO" for instance <iobuf15> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <iobuf15> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <iobuf15> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <obuf0> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <obuf0> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <obuf0> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <obuf0> in unit <okHost>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <obuf1> in unit <okHost>.
+    Set user-defined property "DRIVE =  12" for instance <obuf1> in unit <okHost>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <obuf1> in unit <okHost>.
+    Set user-defined property "SLEW =  SLOW" for instance <obuf1> in unit <okHost>.
+Entity <okHost> analyzed. Unit <okHost> generated.
+
+Analyzing generic Entity <okWireOR> in library <work> (Architecture <archWireOR>).
+	N = 5
+Entity <okWireOR> analyzed. Unit <okWireOR> generated.
+
+Analyzing Entity <USART_MANAGER_TM> in library <work> (Architecture <Behavioral>).
+Entity <USART_MANAGER_TM> analyzed. Unit <USART_MANAGER_TM> generated.
+
+Analyzing Entity <RS_232_RX> in library <work> (Architecture <Behavioral>).
+Entity <RS_232_RX> analyzed. Unit <RS_232_RX> generated.
+
+Analyzing Entity <RX_COUNTERS> in library <work> (Architecture <Behavioral>).
+Entity <RX_COUNTERS> analyzed. Unit <RX_COUNTERS> generated.
+
+Analyzing Entity <RS_232_RX_SHIFTER> in library <work> (Architecture <Behavioral>).
+Entity <RS_232_RX_SHIFTER> analyzed. Unit <RS_232_RX_SHIFTER> generated.
+
+Analyzing Entity <RS_232_TX> in library <work> (Architecture <Behavioral>).
+Entity <RS_232_TX> analyzed. Unit <RS_232_TX> generated.
+
+Analyzing Entity <TX_COUNTERS> in library <work> (Architecture <Behavioral>).
+Entity <TX_COUNTERS> analyzed. Unit <TX_COUNTERS> generated.
+
+Analyzing Entity <RS_232_TX_SHIFTER> in library <work> (Architecture <Behavioral>).
+Entity <RS_232_TX_SHIFTER> analyzed. Unit <RS_232_TX_SHIFTER> generated.
+
+Analyzing Entity <USART_FIFOS_TM> in library <work> (Architecture <Behavioral>).
+Entity <USART_FIFOS_TM> analyzed. Unit <USART_FIFOS_TM> generated.
+
+Analyzing Entity <USART_FIFO_IN_MANAGER> in library <work> (Architecture <Behavioral>).
+Entity <USART_FIFO_IN_MANAGER> analyzed. Unit <USART_FIFO_IN_MANAGER> generated.
+
+Analyzing Entity <USART_FIFO_IN_CPU> in library <work> (Architecture <Behavioral>).
+Entity <USART_FIFO_IN_CPU> analyzed. Unit <USART_FIFO_IN_CPU> generated.
+
+Analyzing Entity <USART_FIFO_OUT_MANAGER> in library <work> (Architecture <Behavioral>).
+Entity <USART_FIFO_OUT_MANAGER> analyzed. Unit <USART_FIFO_OUT_MANAGER> generated.
+
+Analyzing Entity <USART_FIFO_OUT_CPU> in library <work> (Architecture <Behavioral>).
+Entity <USART_FIFO_OUT_CPU> analyzed. Unit <USART_FIFO_OUT_CPU> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <okWireOR>.
+    Related source file is "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/okLibrary.vhd".
+Unit <okWireOR> synthesized.
+
+
+Synthesizing Unit <RX_COUNTERS>.
+    Related source file is "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/RX_COUNTERS.vhd".
+    Found 13-bit register for signal <BAUD_COUNTER>.
+    Found 13-bit adder for signal <BAUD_COUNTER$add0000> created at line 68.
+    Found 13-bit comparator equal for signal <BAUD_FLAG$cmp_eq0000> created at line 73.
+    Found 1-bit register for signal <HOLD_RECEPTION>.
+    Found 4-bit up counter for signal <MESSAGE_COUNTER>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  14 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <RX_COUNTERS> synthesized.
+
+
+Synthesizing Unit <RS_232_RX_SHIFTER>.
+    Related source file is "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/RS_232_RX_SHIFTER.vhd".
+    Found 8-bit register for signal <DATA>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <RS_232_RX_SHIFTER> synthesized.
+
+
+Synthesizing Unit <TX_COUNTERS>.
+    Related source file is "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/TX_COUNTERS.vhd".
+    Found 13-bit up counter for signal <BAUD_COUNTER>.
+    Found 13-bit comparator equal for signal <BAUD_FLAG$cmp_eq0000> created at line 68.
+    Found 4-bit comparator greater for signal <BLOCK_SHIFT$cmp_gt0000> created at line 87.
+    Found 1-bit register for signal <HOLD_TRANSMISSION>.
+    Found 4-bit up counter for signal <MESSAGE_COUNTER>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <TX_COUNTERS> synthesized.
+
+
+Synthesizing Unit <RS_232_TX_SHIFTER>.
+    Related source file is "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/RS_232_TX_SHIFTER.vhd".
+    Found 9-bit register for signal <DATA>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <RS_232_TX_SHIFTER> synthesized.
+
+
+Synthesizing Unit <USART_FIFO_IN_CPU>.
+    Related source file is "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/USART_FIFO_IN_CPU.vhd".
+    Found finite state machine <FSM_0> for signal <FifoState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | LOCAL_CLOCK               (rising_edge)        |
+    | Power Up State     | hold                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <HOST_POSITIVE_ACK>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 D-type flip-flop(s).
+Unit <USART_FIFO_IN_CPU> synthesized.
+
+
+Synthesizing Unit <USART_FIFO_OUT_CPU>.
+    Related source file is "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/USART_FIFO_OUT_CPU.vhd".
+    Found finite state machine <FSM_1> for signal <UnloadState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | LOCAL_CLOCK               (rising_edge)        |
+    | Power Up State     | hold                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <FIFO_OUT_WRITE_REQUEST>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 D-type flip-flop(s).
+Unit <USART_FIFO_OUT_CPU> synthesized.
+
+
+Synthesizing Unit <okHost>.
+    Related source file is "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/okLibrary.vhd".
+Unit <okHost> synthesized.
+
+
+Synthesizing Unit <RS_232_RX>.
+    Related source file is "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/RS_232_RX.vhd".
+    Found 1-bit register for signal <SHIFT_LEFT_R2>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <RS_232_RX> synthesized.
+
+
+Synthesizing Unit <RS_232_TX>.
+    Related source file is "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/RS_232_TX.vhd".
+    Found finite state machine <FSM_2> for signal <TXState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | LOCAL_CLOCK               (rising_edge)        |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <TX_ON>.
+    Found 1-bit register for signal <ENABLE_TX>.
+    Found 1-bit register for signal <ENABLE_TX_R2>.
+    Found 1-bit register for signal <ENABLE_TX_R3>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   4 D-type flip-flop(s).
+Unit <RS_232_TX> synthesized.
+
+
+Synthesizing Unit <USART_FIFO_IN_MANAGER>.
+    Related source file is "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/USART_FIFO_IN_MANAGER.vhd".
+Unit <USART_FIFO_IN_MANAGER> synthesized.
+
+
+Synthesizing Unit <USART_FIFO_OUT_MANAGER>.
+    Related source file is "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/USART_FIFO_OUT_MANAGER.vhd".
+    Found 16-bit register for signal <FIFO_UNLOAD_LENGTH>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <USART_FIFO_OUT_MANAGER> synthesized.
+
+
+Synthesizing Unit <USART_OPALKELLY_INTERFACE>.
+    Related source file is "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/USART_OPALKELLY_INTERFACE.vhd".
+    Found 1-bit tristate buffer for signal <i2c_sda>.
+    Found 1-bit tristate buffer for signal <i2c_scl>.
+    Summary:
+	inferred   2 Tristate(s).
+Unit <USART_OPALKELLY_INTERFACE> synthesized.
+
+
+Synthesizing Unit <USART_MANAGER_TM>.
+    Related source file is "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/USART_MANAGER_TM.vhd".
+Unit <USART_MANAGER_TM> synthesized.
+
+
+Synthesizing Unit <USART_FIFOS_TM>.
+    Related source file is "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/USART_FIFOS_TM.vhd".
+Unit <USART_FIFOS_TM> synthesized.
+
+
+Synthesizing Unit <USART_FIFOS_MANAGER_TM>.
+    Related source file is "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/USART_FIFOS_MANAGER_TM.vhd".
+    Found 3-bit register for signal <HOLD_SIGNAL<3:1>>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <USART_FIFOS_MANAGER_TM> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 13-bit adder                                          : 1
+# Counters                                             : 3
+ 13-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 28
+ 1-bit register                                        : 25
+ 16-bit register                                       : 1
+ 8-bit register                                        : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 3
+ 13-bit comparator equal                               : 2
+ 4-bit comparator greater                              : 1
+# Tristates                                            : 2
+ 1-bit tristate buffer                                 : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <USART_MANAGER/TX/TXState/FSM> on signal <TXState[1:2]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ idle     | 00
+ transmit | 01
+ wait_tx  | 10
+----------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <USART_FIFOS/FIFO_OUT/FIFO_OUT_COMM_HOST/UnloadState/FSM> on signal <UnloadState[1:2]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ hold      | 00
+ wait_host | 01
+ unloading | 10
+-----------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <USART_FIFOS/FIFO_IN/FIFO_IN_COMM_HOST/FifoState/FSM> on signal <FifoState[1:2]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ hold      | 00
+ wait_ack  | 01
+ wait_done | 10
+-----------------------
+Reading core <okCore.ngc>.
+Reading core <FIFO_IN_16W_8R_1024D.ngc>.
+Reading core <FIFO_OUT_8W_16R_1024D.ngc>.
+Reading core <okWireIn.ngc>.
+Reading core <okTriggerIn.ngc>.
+Reading core <okPipeIn.ngc>.
+Reading core <okPipeOut.ngc>.
+Reading core <okTriggerOut.ngc>.
+Reading core <okWireOut.ngc>.
+Loading core <okCore> for timing and area information for instance <hicore>.
+Loading core <FIFO_IN_16W_8R_1024D> for timing and area information for instance <FIFO_IN>.
+Loading core <FIFO_OUT_8W_16R_1024D> for timing and area information for instance <FIFO_OUT>.
+Loading core <okWireIn> for timing and area information for instance <BAUD_DATE>.
+Loading core <okTriggerIn> for timing and area information for instance <TRIGGERS_IN>.
+Loading core <okPipeIn> for timing and area information for instance <PIPE_IN>.
+Loading core <okPipeOut> for timing and area information for instance <PIPE_OUT>.
+Loading core <okTriggerOut> for timing and area information for instance <TRIGGERS_OUT>.
+Loading core <okWireOut> for timing and area information for instance <WIRE_OUT_PIPE_LENGTH>.
+Loading core <okWireOut> for timing and area information for instance <WIRE_OUT_BOARD_REQUEST>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 3
+# Adders/Subtractors                                   : 1
+ 13-bit adder                                          : 1
+# Counters                                             : 3
+ 13-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 53
+ Flip-Flops                                            : 53
+# Comparators                                          : 3
+ 13-bit comparator equal                               : 2
+ 4-bit comparator greater                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <USART_FIFOS_MANAGER_TM> ...
+
+Optimizing unit <RX_COUNTERS> ...
+
+Optimizing unit <RS_232_RX_SHIFTER> ...
+
+Optimizing unit <TX_COUNTERS> ...
+
+Optimizing unit <RS_232_TX_SHIFTER> ...
+
+Optimizing unit <okHost> ...
+
+Optimizing unit <RS_232_TX> ...
+
+Optimizing unit <USART_FIFO_OUT_MANAGER> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block USART_FIFOS_MANAGER_TM, actual ratio is 5.
+
+Final Macro Processing ...
+
+Processing Unit <USART_FIFOS_MANAGER_TM> :
+	Found 2-bit shift register for signal <USART_MANAGER/TX/ENABLE_TX_R3>.
+Unit <USART_FIFOS_MANAGER_TM> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 77
+ Flip-Flops                                            : 77
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : USART_FIFOS_MANAGER_TM.ngr
+Top Level Output File Name         : USART_FIFOS_MANAGER_TM
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 36
+
+Cell Usage :
+# BELS                             : 980
+#      GND                         : 10
+#      INV                         : 22
+#      LUT1                        : 51
+#      LUT2                        : 224
+#      LUT2_L                      : 17
+#      LUT3                        : 83
+#      LUT4                        : 261
+#      LUT4_D                      : 1
+#      LUT4_L                      : 1
+#      MUXCY                       : 167
+#      MUXF5                       : 18
+#      VCC                         : 5
+#      XORCY                       : 120
+# FlipFlops/Latches                : 728
+#      FD                          : 15
+#      FDC                         : 292
+#      FDCE                        : 115
+#      FDE                         : 126
+#      FDP                         : 24
+#      FDPE                        : 10
+#      FDR                         : 23
+#      FDRE                        : 105
+#      FDRS                        : 14
+#      FDRSE                       : 1
+#      FDS                         : 1
+#      FDSE                        : 2
+# RAMS                             : 2
+#      RAMB16_S9_S18               : 2
+# Shift Registers                  : 1
+#      SRL16                       : 1
+# Clock Buffers                    : 2
+#      BUFGDLL                     : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 34
+#      IBUF                        : 8
+#      IOBUF                       : 16
+#      OBUF                        : 8
+#      OBUFT                       : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200eft256-4 
+
+ Number of Slices:                      513  out of   8672     5%  
+ Number of Slice Flip Flops:            728  out of  17344     4%  
+ Number of 4 input LUTs:                661  out of  17344     3%  
+    Number used as logic:               660
+    Number used as Shift registers:       1
+ Number of IOs:                          36
+ Number of bonded IOBs:                  35  out of    190    18%  
+ Number of BRAMs:                         2  out of     28     7%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+LOCAL_CLOCK                        | BUFGP                  | 357   |
+hi_in<0>                           | BUFGDLL                | 376   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                             | Buffer(FF name)                                                                                                                            | Load  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------+
+OK_MANAGER/OPALKELLY_HOST/hicore/ok1<25>(OK_MANAGER/OPALKELLY_HOST/hicore/ti_reset:Q)                                                                                                      | NONE(OK_MANAGER/TRIGGERS_IN/ep_trigger_0)                                                                                                  | 98    |
+USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)| NONE(USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_0)    | 44    |
+USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)    | NONE(USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0)  | 42    |
+USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)| NONE(USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0)| 42    |
+USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<1>(USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_1:Q)    | NONE(USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0)  | 41    |
+USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<0>(USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0:Q)| NONE(USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0)| 41    |
+USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg<1>(USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_1:Q)    | NONE(USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_0)      | 40    |
+USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)    | NONE(USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_0)              | 35    |
+USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>(USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_2:Q)| NONE(USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_0)            | 32    |
+OK_MANAGER/TRIGGERS_IN/ep_trigger<0>(OK_MANAGER/TRIGGERS_IN/ep_trigger_0:Q)                                                                                                                | NONE(USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/RST_FULL_GEN)                                            | 12    |
+USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)      | NONE(USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0)                                            | 3     |
+USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)  | NONE(USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0)                                          | 3     |
+USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)                 | NONE(USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)               | 2     |
+USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)      | NONE(USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                            | 2     |
+USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2(USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rst_d2:Q)             | NONE(USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i)             | 2     |
+USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)  | NONE(USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                          | 2     |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.604ns (Maximum Frequency: 104.123MHz)
+   Minimum input arrival time before clock: 7.210ns
+   Maximum output required time after clock: 7.810ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'LOCAL_CLOCK'
+  Clock period: 7.196ns (frequency: 138.966MHz)
+  Total number of paths / destination ports: 4387 / 477
+-------------------------------------------------------------------------
+Delay:               7.196ns (Levels of Logic = 22)
+  Source:            USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_0 (FF)
+  Destination:       USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_12 (FF)
+  Source Clock:      LOCAL_CLOCK rising
+  Destination Clock: LOCAL_CLOCK rising
+
+  Data Path: USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_0 to USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_12
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.622  USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_0 (USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_0)
+     LUT4:I0->O            1   0.704   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcompar_BAUD_FLAG_cmp_eq0000_lut<0> (USART_MANAGER/TX/SHIFT_MANAGER/Mcompar_BAUD_FLAG_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcompar_BAUD_FLAG_cmp_eq0000_cy<0> (USART_MANAGER/TX/SHIFT_MANAGER/Mcompar_BAUD_FLAG_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcompar_BAUD_FLAG_cmp_eq0000_cy<1> (USART_MANAGER/TX/SHIFT_MANAGER/Mcompar_BAUD_FLAG_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcompar_BAUD_FLAG_cmp_eq0000_cy<2> (USART_MANAGER/TX/SHIFT_MANAGER/Mcompar_BAUD_FLAG_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcompar_BAUD_FLAG_cmp_eq0000_cy<3> (USART_MANAGER/TX/SHIFT_MANAGER/Mcompar_BAUD_FLAG_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcompar_BAUD_FLAG_cmp_eq0000_cy<4> (USART_MANAGER/TX/SHIFT_MANAGER/Mcompar_BAUD_FLAG_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcompar_BAUD_FLAG_cmp_eq0000_cy<5> (USART_MANAGER/TX/SHIFT_MANAGER/Mcompar_BAUD_FLAG_cmp_eq0000_cy<5>)
+     MUXCY:CI->O          19   0.331   1.260  USART_MANAGER/TX/SHIFT_MANAGER/Mcompar_BAUD_FLAG_cmp_eq0000_cy<6> (USART_MANAGER/TX/SHIFT_MANAGER/BAUD_FLAG)
+     LUT3:I0->O            1   0.704   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_lut<0> (USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<0> (USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<1> (USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<2> (USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<3> (USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<4> (USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<5> (USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<6> (USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<7> (USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<8> (USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<9> (USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<10> (USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<10>)
+     MUXCY:CI->O           0   0.059   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<11> (USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_cy<11>)
+     XORCY:CI->O           1   0.804   0.000  USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER_xor<12> (USART_MANAGER/TX/SHIFT_MANAGER/Mcount_BAUD_COUNTER12)
+     FDE:D                     0.308          USART_MANAGER/TX/SHIFT_MANAGER/BAUD_COUNTER_12
+    ----------------------------------------
+    Total                      7.196ns (5.314ns logic, 1.882ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'hi_in<0>'
+  Clock period: 9.604ns (frequency: 104.123MHz)
+  Total number of paths / destination ports: 3135 / 627
+-------------------------------------------------------------------------
+Delay:               9.604ns (Levels of Logic = 9)
+  Source:            OK_MANAGER/OPALKELLY_HOST/hicore/ti_addr_0 (FF)
+  Destination:       OK_MANAGER/OPALKELLY_HOST/hicore/hi_dataout_0 (FF)
+  Source Clock:      hi_in<0> rising
+  Destination Clock: hi_in<0> rising
+
+  Data Path: OK_MANAGER/OPALKELLY_HOST/hicore/ti_addr_0 to OK_MANAGER/OPALKELLY_HOST/hicore/hi_dataout_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             13   0.591   1.158  ti_addr_0 (ok1<16>)
+     end scope: 'OK_MANAGER/OPALKELLY_HOST/hicore'
+     begin scope: 'OK_MANAGER/TRIGGERS_OUT'
+     LUT4:I0->O            1   0.704   0.595  ok2_15_cmp_eq0000826 (ok2_15_cmp_eq0000826)
+     LUT4:I0->O           16   0.704   1.209  ok2_15_cmp_eq00008136 (ok2_15_cmp_eq0000)
+     LUT2:I0->O            1   0.704   0.499  ok2_6_mux00001 (ok2<6>)
+     end scope: 'OK_MANAGER/TRIGGERS_OUT'
+     LUT2_L:I1->LO         1   0.704   0.104  OK_MANAGER/OPALKELLY_WO/ok2<6>_SW0 (N26)
+     LUT4:I3->O            1   0.704   0.595  OK_MANAGER/OPALKELLY_WO/ok2<6> (OK_MANAGER/ok2<6>)
+     begin scope: 'OK_MANAGER/OPALKELLY_HOST/hicore'
+     LUT4:I0->O            1   0.704   0.000  hi_dataout_mux0000<6>1 (hi_dataout_mux0000<6>1)
+     MUXF5:I0->O           1   0.321   0.000  hi_dataout_mux0000<6>_f5 (hi_dataout_mux0000<6>)
+     FDE:D                     0.308          hi_dataout_6
+    ----------------------------------------
+    Total                      9.604ns (5.444ns logic, 4.160ns route)
+                                       (56.7% logic, 43.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'LOCAL_CLOCK'
+  Total number of paths / destination ports: 19 / 19
+-------------------------------------------------------------------------
+Offset:              4.126ns (Levels of Logic = 2)
+  Source:            RX_IN (PAD)
+  Destination:       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_3 (FF)
+  Destination Clock: LOCAL_CLOCK rising
+
+  Data Path: RX_IN to USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.706  RX_IN_IBUF (RX_IN_IBUF)
+     LUT3:I0->O            4   0.704   0.587  USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_or00001 (USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_or0000)
+     FDRE:R                    0.911          USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_0
+    ----------------------------------------
+    Total                      4.126ns (2.833ns logic, 1.293ns route)
+                                       (68.7% logic, 31.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'hi_in<0>'
+  Total number of paths / destination ports: 618 / 137
+-------------------------------------------------------------------------
+Offset:              7.210ns (Levels of Logic = 6)
+  Source:            hi_in<7> (PAD)
+  Destination:       OK_MANAGER/OPALKELLY_HOST/hicore/ti_addr_2 (FF)
+  Destination Clock: hi_in<0> rising
+
+  Data Path: hi_in<7> to OK_MANAGER/OPALKELLY_HOST/hicore/ti_addr_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.932  hi_in_7_IBUF (hi_in_7_IBUF)
+     begin scope: 'OK_MANAGER/OPALKELLY_HOST/hicore'
+     LUT3:I0->O            6   0.704   0.704  ti_read_mux0000111 (N19)
+     LUT3:I2->O            5   0.704   0.808  ti_addr_mux0000<1>11 (N4)
+     LUT4:I0->O            1   0.704   0.424  ti_addr_mux0000<2>11 (ti_addr_mux0000<2>11)
+     LUT4:I3->O            1   0.704   0.000  ti_addr_mux0000<2>33 (ti_addr_mux0000<2>)
+     FDE:D                     0.308          ti_addr_2
+    ----------------------------------------
+    Total                      7.210ns (4.342ns logic, 2.868ns route)
+                                       (60.2% logic, 39.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'LOCAL_CLOCK'
+  Total number of paths / destination ports: 18 / 5
+-------------------------------------------------------------------------
+Offset:              7.810ns (Levels of Logic = 3)
+  Source:            USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_1 (FF)
+  Destination:       LED_VECTOR<2> (PAD)
+  Source Clock:      LOCAL_CLOCK rising
+
+  Data Path: USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_1 to LED_VECTOR<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             7   0.591   0.883  USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_1 (USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_1)
+     LUT4:I0->O           16   0.704   1.209  USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_FINISHED_cmp_eq00001 (RX_DONE)
+     LUT2:I0->O            2   0.704   0.447  HELD_SIGNAL_2_or00001 (LED_VECTOR_2_OBUF)
+     OBUF:I->O                 3.272          LED_VECTOR_2_OBUF (LED_VECTOR<2>)
+    ----------------------------------------
+    Total                      7.810ns (5.271ns logic, 2.539ns route)
+                                       (67.5% logic, 32.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'hi_in<0>'
+  Total number of paths / destination ports: 33 / 17
+-------------------------------------------------------------------------
+Offset:              6.048ns (Levels of Logic = 3)
+  Source:            OK_MANAGER/OPALKELLY_HOST/hicore/hi_drive (FF)
+  Destination:       hi_inout<15> (PAD)
+  Source Clock:      hi_in<0> rising
+
+  Data Path: OK_MANAGER/OPALKELLY_HOST/hicore/hi_drive to hi_inout<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.447  hi_drive (hi_out<2>)
+     end scope: 'OK_MANAGER/OPALKELLY_HOST/hicore'
+     INV:I->O             16   0.704   1.034  OK_MANAGER/OPALKELLY_HOST/hi_drive_b1_INV_0 (OK_MANAGER/OPALKELLY_HOST/hi_drive_b)
+     IOBUF:T->IO               3.272          OK_MANAGER/OPALKELLY_HOST/iobuf15 (hi_inout<15>)
+    ----------------------------------------
+    Total                      6.048ns (4.567ns logic, 1.481ns route)
+                                       (75.5% logic, 24.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.32 secs
+ 
+--> 
+
+Total memory usage is 336748 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   20 (  20 filtered)
+Number of infos    :   17 (  17 filtered)
+

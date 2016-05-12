@@ -1,0 +1,8 @@
+[Inputs]
+LOCAL_CLOCK
+RX_IN
+=FULL_BAUD_RATE[12:0]=
+[Outputs]
+SHIFT
+DONE
+[BiDir]

@@ -1,0 +1,4 @@
+vhdl isim_temp "src/generic_ROM_clk.vhd"
+vhdl isim_temp "src/generic_RAM_clk.vhd"
+vhdl isim_temp "src/ROM_to_RAM.vhd"
+vhdl isim_temp "src/ROM_to_RAM_tb.vhd"

@@ -1,0 +1,38 @@
+NET LOCAL_CLOCK     LOC   = A8;
+
+#DEBUG SIGNALS
+NET "LED_VECTOR<0>" LOC   = P14;
+NET "LED_VECTOR<1>" LOC   = R13;
+NET "LED_VECTOR<2>" LOC   = T13;
+NET "LED_VECTOR<3>" LOC   = P15;
+#=============
+
+NET "HI_IN<0>"		  LOC   = F9;
+NET "HI_IN<1>"		  LOC   = N5;
+NET "HI_IN<2>"		  LOC   = T9;
+NET "HI_IN<3>"		  LOC   = M7;
+NET "HI_IN<4>"		  LOC   = P12;
+NET "HI_IN<5>"		  LOC   = P11;
+NET "HI_IN<6>"		  LOC   = P13;
+NET "HI_IN<7>"		  LOC   = N12;
+NET "HI_OUT<0>"	  LOC   = P5;
+NET "HI_OUT<1>"	  LOC   = N10;
+NET "HI_INOUT<0>"	  LOC   = M8;
+NET "HI_INOUT<1>"	  LOC   = L8;
+NET "HI_INOUT<2>"	  LOC   = T8;
+NET "HI_INOUT<3>"	  LOC   = N8;
+NET "HI_INOUT<4>"	  LOC   = P8;
+NET "HI_INOUT<5>"	  LOC   = P9;
+NET "HI_INOUT<6>"	  LOC   = N9;
+NET "HI_INOUT<7>"	  LOC   = M9;
+NET "HI_INOUT<8>"	  LOC   = R11;
+NET "HI_INOUT<9>"	  LOC   = R6;
+NET "HI_INOUT<10>"  LOC   = T5;
+NET "HI_INOUT<11>"  LOC   = T4;
+NET "HI_INOUT<12>"  LOC   = R4;
+NET "HI_INOUT<13>"  LOC   = M6;
+NET "HI_INOUT<14>"  LOC   = N6;
+NET "HI_INOUT<15>"  LOC   = P6;
+
+NET "LOCAL_CLOCK" TNM_NET = LOCAL_CLOCK;
+TIMESPEC TS_LOCAL_CLOCK   = PERIOD "LOCAL_CLOCK" 20 ns HIGH 50%;

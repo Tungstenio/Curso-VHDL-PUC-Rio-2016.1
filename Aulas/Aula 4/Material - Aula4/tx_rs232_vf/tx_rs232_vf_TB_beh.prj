@@ -1,0 +1,6 @@
+vhdl work "ShiftRegister_TX.vhd"
+vhdl work "counter_pulse.vhd"
+vhdl work "counter_limit.vhd"
+vhdl work "biestavel.vhd"
+vhdl work "tx_rs232_vf.vhd"
+vhdl work "tx_rs232_vf_TB.vhd"

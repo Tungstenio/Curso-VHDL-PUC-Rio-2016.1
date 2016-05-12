@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Aulas/Aula 5/memoria/src/generic_ROM_clk.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula7/tarefa/ROM_TX_RX_RAM/ROM_TX_RX_RAM.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula7/tarefa/ROM_TX_RX_RAM/RX_RS232_MAIN.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula7/tarefa/ROM_TX_RX_RAM/RX_RS232_MAIN_TB.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula7/tarefa/ROM_TX_RX_RAM/ShiftRegister.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula7/tarefa/ROM_TX_RX_RAM/ShiftRegisterSP.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula7/tarefa/ROM_TX_RX_RAM/TX_RX.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula7/tarefa/ROM_TX_RX_RAM/TX_RX_Tb.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula7/tarefa/ROM_TX_RX_RAM/biestavel.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula7/tarefa/ROM_TX_RX_RAM/counter_limit.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula7/tarefa/ROM_TX_RX_RAM/counter_pulse.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula7/tarefa/ROM_TX_RX_RAM/tx_counters.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula7/tarefa/ROM_TX_RX_RAM/tx_rs232.vhd&quot; into library work</arg>
+</msg>
+
+</messages>
+

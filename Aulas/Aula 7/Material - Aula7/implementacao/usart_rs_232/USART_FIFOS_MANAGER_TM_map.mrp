@@ -1,0 +1,968 @@
+Release 14.5 Map P.58f (nt64)
+Xilinx Mapping Report File for Design 'USART_FIFOS_MANAGER_TM'
+
+Design Information
+------------------
+Command Line   : map -filter "C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board
+Tests/usart_rs_232/iseconfig/filter.filter" -intstyle ise -p xc3s1200e-ft256-4
+-cm area -ir off -pr off -c 100 -o USART_FIFOS_MANAGER_TM_map.ncd
+USART_FIFOS_MANAGER_TM.ngd USART_FIFOS_MANAGER_TM.pcf 
+Target Device  : xc3s1200e
+Target Package : ft256
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Wed May 11 17:49:03 2016
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    3 (3 filtered)
+Logic Utilization:
+  Number of Slice Flip Flops:           619 out of  17,344    3%
+  Number of 4 input LUTs:               524 out of  17,344    3%
+Logic Distribution:
+  Number of occupied Slices:            487 out of   8,672    5%
+    Number of Slices containing only related logic:     487 out of     487 100%
+    Number of Slices containing unrelated logic:          0 out of     487   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         575 out of  17,344    3%
+    Number used as logic:               523
+    Number used as a route-thru:         51
+    Number used as Shift registers:       1
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 34 out of     190   17%
+  Number of RAMB16s:                      2 out of      28    7%
+  Number of BUFGMUXs:                     2 out of      24    8%
+  Number of DCMs:                         1 out of       8   12%
+
+Average Fanout of Non-Clock Nets:                2.99
+
+Peak Memory Usage:  307 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   3 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+
+Section 3 - Informational
+-------------------------
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 133 block(s) removed
+  72 block(s) optimized away
+ 131 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.rd/gras.rsts/ram_empty_i" is sourceless and has been removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i<9>" is sourceless and has been
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i<8>" is sourceless and has been
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i<7>" is sourceless and has been
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i<6>" is sourceless and has been
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i<5>" is sourceless and has been
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i<4>" is sourceless and has been
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i<3>" is sourceless and has been
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i<2>" is sourceless and has been
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i<1>" is sourceless and has been
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i<0>" is sourceless and has been
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<8>" is sourceless
+and has been removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_xor<9>" (XOR)
+removed.
+  The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_sub0000<9>" is sourceless and has
+been removed.
+   Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_9" (FF) removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<9>" is
+sourceless and has been removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<7>" is sourceless
+and has been removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_xor<8>" (XOR)
+removed.
+  The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_sub0000<8>" is sourceless and has
+been removed.
+   Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_8" (FF) removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<8>" (MUX)
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<8>" is
+sourceless and has been removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<6>" is sourceless
+and has been removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_xor<7>" (XOR)
+removed.
+  The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_sub0000<7>" is sourceless and has
+been removed.
+   Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_7" (FF) removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<7>" (MUX)
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<7>" is
+sourceless and has been removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<5>" is sourceless
+and has been removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_xor<6>" (XOR)
+removed.
+  The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_sub0000<6>" is sourceless and has
+been removed.
+   Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_6" (FF) removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<6>" (MUX)
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<6>" is
+sourceless and has been removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<4>" is sourceless
+and has been removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_xor<5>" (XOR)
+removed.
+  The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_sub0000<5>" is sourceless and has
+been removed.
+   Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_5" (FF) removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<5>" (MUX)
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<5>" is
+sourceless and has been removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<3>" is sourceless
+and has been removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_xor<4>" (XOR)
+removed.
+  The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_sub0000<4>" is sourceless and has
+been removed.
+   Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_4" (FF) removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<4>" (MUX)
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<4>" is
+sourceless and has been removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<2>" is sourceless
+and has been removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_xor<3>" (XOR)
+removed.
+  The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_sub0000<3>" is sourceless and has
+been removed.
+   Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_3" (FF) removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<3>" (MUX)
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<3>" is
+sourceless and has been removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<1>" is sourceless
+and has been removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_xor<2>" (XOR)
+removed.
+  The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_sub0000<2>" is sourceless and has
+been removed.
+   Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_2" (FF) removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<2>" (MUX)
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<2>" is
+sourceless and has been removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<0>" is sourceless
+and has been removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_xor<1>" (XOR)
+removed.
+  The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_sub0000<1>" is sourceless and has
+been removed.
+   Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_1" (FF) removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<1>" (MUX)
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<1>" is
+sourceless and has been removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<0>" is
+sourceless and has been removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_xor<0>" (XOR)
+removed.
+  The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_sub0000<0>" is sourceless and has
+been removed.
+   Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/wr_data_count_i_0" (FF) removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_cy<0>" (MUX)
+removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gcx.clkx/rd_pntr_gc<0>" is sourceless and has been removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_0" (FF) removed.
+  The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg<0>" is sourceless and has
+been removed.
+   Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_0" (FF) removed.
+    The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg<0>" is sourceless and has
+been removed.
+The signal
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gcx.clkx/rd_pntr_gc_xor0009" is sourceless and has been removed.
+ Sourceless block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gcx.clkx/rd_pntr_gc_0" (FF) removed.
+The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger<15>" is sourceless and has been
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger<14>" is sourceless and has been
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger<13>" is sourceless and has been
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger<12>" is sourceless and has been
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger<11>" is sourceless and has been
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger<10>" is sourceless and has been
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger<9>" is sourceless and has been
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger<8>" is sourceless and has been
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger<7>" is sourceless and has been
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger<6>" is sourceless and has been
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger<5>" is sourceless and has been
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger<2>" is sourceless and has been
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/eptrig_xor0000<2>" is sourceless and has been
+removed.
+ Sourceless block "OK_MANAGER/TRIGGERS_IN/eptrig_2" (SFF) removed.
+  The signal "OK_MANAGER/TRIGGERS_IN/eptrig<2>" is sourceless and has been
+removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff0_2" (FF) removed.
+    The signal "OK_MANAGER/TRIGGERS_IN/trigff0<2>" is sourceless and has been
+removed.
+     Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff1_2" (FF) removed.
+      The signal "OK_MANAGER/TRIGGERS_IN/trigff1<2>" is sourceless and has been
+removed.
+       Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_ep_trigger_xor0000_Result<2>1"
+(ROM) removed.
+        The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger_xor0000<2>" is sourceless and has
+been removed.
+         Sourceless block "OK_MANAGER/TRIGGERS_IN/ep_trigger_2" (FF) removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_eptrig_xor0000_Result<2>1" (ROM)
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/eptrig_xor0000<5>" is sourceless and has been
+removed.
+ Sourceless block "OK_MANAGER/TRIGGERS_IN/eptrig_5" (SFF) removed.
+  The signal "OK_MANAGER/TRIGGERS_IN/eptrig<5>" is sourceless and has been
+removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff0_5" (FF) removed.
+    The signal "OK_MANAGER/TRIGGERS_IN/trigff0<5>" is sourceless and has been
+removed.
+     Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff1_5" (FF) removed.
+      The signal "OK_MANAGER/TRIGGERS_IN/trigff1<5>" is sourceless and has been
+removed.
+       Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_ep_trigger_xor0000_Result<5>1"
+(ROM) removed.
+        The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger_xor0000<5>" is sourceless and has
+been removed.
+         Sourceless block "OK_MANAGER/TRIGGERS_IN/ep_trigger_5" (FF) removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_eptrig_xor0000_Result<5>1" (ROM)
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/eptrig_xor0000<6>" is sourceless and has been
+removed.
+ Sourceless block "OK_MANAGER/TRIGGERS_IN/eptrig_6" (SFF) removed.
+  The signal "OK_MANAGER/TRIGGERS_IN/eptrig<6>" is sourceless and has been
+removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff0_6" (FF) removed.
+    The signal "OK_MANAGER/TRIGGERS_IN/trigff0<6>" is sourceless and has been
+removed.
+     Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff1_6" (FF) removed.
+      The signal "OK_MANAGER/TRIGGERS_IN/trigff1<6>" is sourceless and has been
+removed.
+       Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_ep_trigger_xor0000_Result<6>1"
+(ROM) removed.
+        The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger_xor0000<6>" is sourceless and has
+been removed.
+         Sourceless block "OK_MANAGER/TRIGGERS_IN/ep_trigger_6" (FF) removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_eptrig_xor0000_Result<6>1" (ROM)
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/eptrig_xor0000<7>" is sourceless and has been
+removed.
+ Sourceless block "OK_MANAGER/TRIGGERS_IN/eptrig_7" (SFF) removed.
+  The signal "OK_MANAGER/TRIGGERS_IN/eptrig<7>" is sourceless and has been
+removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff0_7" (FF) removed.
+    The signal "OK_MANAGER/TRIGGERS_IN/trigff0<7>" is sourceless and has been
+removed.
+     Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff1_7" (FF) removed.
+      The signal "OK_MANAGER/TRIGGERS_IN/trigff1<7>" is sourceless and has been
+removed.
+       Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_ep_trigger_xor0000_Result<7>1"
+(ROM) removed.
+        The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger_xor0000<7>" is sourceless and has
+been removed.
+         Sourceless block "OK_MANAGER/TRIGGERS_IN/ep_trigger_7" (FF) removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_eptrig_xor0000_Result<7>1" (ROM)
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/eptrig_xor0000<8>" is sourceless and has been
+removed.
+ Sourceless block "OK_MANAGER/TRIGGERS_IN/eptrig_8" (SFF) removed.
+  The signal "OK_MANAGER/TRIGGERS_IN/eptrig<8>" is sourceless and has been
+removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff0_8" (FF) removed.
+    The signal "OK_MANAGER/TRIGGERS_IN/trigff0<8>" is sourceless and has been
+removed.
+     Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff1_8" (FF) removed.
+      The signal "OK_MANAGER/TRIGGERS_IN/trigff1<8>" is sourceless and has been
+removed.
+       Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_ep_trigger_xor0000_Result<8>1"
+(ROM) removed.
+        The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger_xor0000<8>" is sourceless and has
+been removed.
+         Sourceless block "OK_MANAGER/TRIGGERS_IN/ep_trigger_8" (FF) removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_eptrig_xor0000_Result<8>1" (ROM)
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/eptrig_xor0000<9>" is sourceless and has been
+removed.
+ Sourceless block "OK_MANAGER/TRIGGERS_IN/eptrig_9" (SFF) removed.
+  The signal "OK_MANAGER/TRIGGERS_IN/eptrig<9>" is sourceless and has been
+removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff0_9" (FF) removed.
+    The signal "OK_MANAGER/TRIGGERS_IN/trigff0<9>" is sourceless and has been
+removed.
+     Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff1_9" (FF) removed.
+      The signal "OK_MANAGER/TRIGGERS_IN/trigff1<9>" is sourceless and has been
+removed.
+       Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_ep_trigger_xor0000_Result<9>1"
+(ROM) removed.
+        The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger_xor0000<9>" is sourceless and has
+been removed.
+         Sourceless block "OK_MANAGER/TRIGGERS_IN/ep_trigger_9" (FF) removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_eptrig_xor0000_Result<9>1" (ROM)
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/eptrig_xor0000<10>" is sourceless and has
+been removed.
+ Sourceless block "OK_MANAGER/TRIGGERS_IN/eptrig_10" (SFF) removed.
+  The signal "OK_MANAGER/TRIGGERS_IN/eptrig<10>" is sourceless and has been
+removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff0_10" (FF) removed.
+    The signal "OK_MANAGER/TRIGGERS_IN/trigff0<10>" is sourceless and has been
+removed.
+     Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff1_10" (FF) removed.
+      The signal "OK_MANAGER/TRIGGERS_IN/trigff1<10>" is sourceless and has been
+removed.
+       Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_ep_trigger_xor0000_Result<10>1"
+(ROM) removed.
+        The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger_xor0000<10>" is sourceless and has
+been removed.
+         Sourceless block "OK_MANAGER/TRIGGERS_IN/ep_trigger_10" (FF) removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_eptrig_xor0000_Result<10>1" (ROM)
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/eptrig_xor0000<11>" is sourceless and has
+been removed.
+ Sourceless block "OK_MANAGER/TRIGGERS_IN/eptrig_11" (SFF) removed.
+  The signal "OK_MANAGER/TRIGGERS_IN/eptrig<11>" is sourceless and has been
+removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff0_11" (FF) removed.
+    The signal "OK_MANAGER/TRIGGERS_IN/trigff0<11>" is sourceless and has been
+removed.
+     Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff1_11" (FF) removed.
+      The signal "OK_MANAGER/TRIGGERS_IN/trigff1<11>" is sourceless and has been
+removed.
+       Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_ep_trigger_xor0000_Result<11>1"
+(ROM) removed.
+        The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger_xor0000<11>" is sourceless and has
+been removed.
+         Sourceless block "OK_MANAGER/TRIGGERS_IN/ep_trigger_11" (FF) removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_eptrig_xor0000_Result<11>1" (ROM)
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/eptrig_xor0000<12>" is sourceless and has
+been removed.
+ Sourceless block "OK_MANAGER/TRIGGERS_IN/eptrig_12" (SFF) removed.
+  The signal "OK_MANAGER/TRIGGERS_IN/eptrig<12>" is sourceless and has been
+removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff0_12" (FF) removed.
+    The signal "OK_MANAGER/TRIGGERS_IN/trigff0<12>" is sourceless and has been
+removed.
+     Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff1_12" (FF) removed.
+      The signal "OK_MANAGER/TRIGGERS_IN/trigff1<12>" is sourceless and has been
+removed.
+       Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_ep_trigger_xor0000_Result<12>1"
+(ROM) removed.
+        The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger_xor0000<12>" is sourceless and has
+been removed.
+         Sourceless block "OK_MANAGER/TRIGGERS_IN/ep_trigger_12" (FF) removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_eptrig_xor0000_Result<12>1" (ROM)
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/eptrig_xor0000<13>" is sourceless and has
+been removed.
+ Sourceless block "OK_MANAGER/TRIGGERS_IN/eptrig_13" (SFF) removed.
+  The signal "OK_MANAGER/TRIGGERS_IN/eptrig<13>" is sourceless and has been
+removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff0_13" (FF) removed.
+    The signal "OK_MANAGER/TRIGGERS_IN/trigff0<13>" is sourceless and has been
+removed.
+     Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff1_13" (FF) removed.
+      The signal "OK_MANAGER/TRIGGERS_IN/trigff1<13>" is sourceless and has been
+removed.
+       Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_ep_trigger_xor0000_Result<13>1"
+(ROM) removed.
+        The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger_xor0000<13>" is sourceless and has
+been removed.
+         Sourceless block "OK_MANAGER/TRIGGERS_IN/ep_trigger_13" (FF) removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_eptrig_xor0000_Result<13>1" (ROM)
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/eptrig_xor0000<14>" is sourceless and has
+been removed.
+ Sourceless block "OK_MANAGER/TRIGGERS_IN/eptrig_14" (SFF) removed.
+  The signal "OK_MANAGER/TRIGGERS_IN/eptrig<14>" is sourceless and has been
+removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff0_14" (FF) removed.
+    The signal "OK_MANAGER/TRIGGERS_IN/trigff0<14>" is sourceless and has been
+removed.
+     Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff1_14" (FF) removed.
+      The signal "OK_MANAGER/TRIGGERS_IN/trigff1<14>" is sourceless and has been
+removed.
+       Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_ep_trigger_xor0000_Result<14>1"
+(ROM) removed.
+        The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger_xor0000<14>" is sourceless and has
+been removed.
+         Sourceless block "OK_MANAGER/TRIGGERS_IN/ep_trigger_14" (FF) removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_eptrig_xor0000_Result<14>1" (ROM)
+removed.
+The signal "OK_MANAGER/TRIGGERS_IN/eptrig_xor0000<15>" is sourceless and has
+been removed.
+ Sourceless block "OK_MANAGER/TRIGGERS_IN/eptrig_15" (SFF) removed.
+  The signal "OK_MANAGER/TRIGGERS_IN/eptrig<15>" is sourceless and has been
+removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff0_15" (FF) removed.
+    The signal "OK_MANAGER/TRIGGERS_IN/trigff0<15>" is sourceless and has been
+removed.
+     Sourceless block "OK_MANAGER/TRIGGERS_IN/trigff1_15" (FF) removed.
+      The signal "OK_MANAGER/TRIGGERS_IN/trigff1<15>" is sourceless and has been
+removed.
+       Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_ep_trigger_xor0000_Result<15>1"
+(ROM) removed.
+        The signal "OK_MANAGER/TRIGGERS_IN/ep_trigger_xor0000<15>" is sourceless and has
+been removed.
+         Sourceless block "OK_MANAGER/TRIGGERS_IN/ep_trigger_15" (FF) removed.
+   Sourceless block "OK_MANAGER/TRIGGERS_IN/Mxor_eptrig_xor0000_Result<15>1" (ROM)
+removed.
+The signal "OK_MANAGER/BAUD_DATE/ep_dataout<15>" is sourceless and has been
+removed.
+The signal "OK_MANAGER/BAUD_DATE/ep_dataout<14>" is sourceless and has been
+removed.
+The signal "OK_MANAGER/BAUD_DATE/ep_dataout<13>" is sourceless and has been
+removed.
+The signal "OK_MANAGER/BAUD_DATE/ep_datahold<13>" is sourceless and has been
+removed.
+ Sourceless block "OK_MANAGER/BAUD_DATE/ep_dataout_13" (SFF) removed.
+The signal "OK_MANAGER/BAUD_DATE/ep_datahold<14>" is sourceless and has been
+removed.
+ Sourceless block "OK_MANAGER/BAUD_DATE/ep_dataout_14" (SFF) removed.
+The signal "OK_MANAGER/BAUD_DATE/ep_datahold<15>" is sourceless and has been
+removed.
+ Sourceless block "OK_MANAGER/BAUD_DATE/ep_dataout_15" (SFF) removed.
+The signal
+"USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
+_sync_fifo.gl0.rd/gras.rsts/ram_empty_i" is sourceless and has been removed.
+The signal
+"USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
+_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" is sourceless and has been removed.
+The signal
+"USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
+_sync_fifo.gcx.clkx/wr_pntr_gc<0>" is sourceless and has been removed.
+ Sourceless block
+"USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
+_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_0" (FF) removed.
+  The signal
+"USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
+_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg<0>" is sourceless and has
+been removed.
+   Sourceless block
+"USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
+_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_0" (FF) removed.
+    The signal
+"USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
+_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<0>" is sourceless and has
+been removed.
+The signal
+"USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
+_sync_fifo.gcx.clkx/wr_pntr_gc_xor0009" is sourceless and has been removed.
+ Sourceless block
+"USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
+_sync_fifo.gcx.clkx/wr_pntr_gc_0" (FF) removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "OK_MANAGER/ok1<30>" is unused and has been removed.
+ Unused block "OK_MANAGER/OPALKELLY_HOST/hicore/ti_blockstrobe" (SFF) removed.
+The signal "i2c_scl" is unused and has been removed.
+ Unused block "i2c_scl_OBUFT" (TRI) removed.
+The signal "i2c_sda" is unused and has been removed.
+ Unused block "i2c_sda_OBUFT" (TRI) removed.
+Unused block "OK_MANAGER/BAUD_DATE/ep_datahold_13" (SFF) removed.
+Unused block "OK_MANAGER/BAUD_DATE/ep_datahold_14" (SFF) removed.
+Unused block "OK_MANAGER/BAUD_DATE/ep_datahold_15" (SFF) removed.
+Unused block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gcx.clkx/Mxor_rd_pntr_gc_xor0009_Result1" (ROM) removed.
+Unused block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.rd/gras.rsts/ram_empty_i" (FF) removed.
+Unused block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<0>" (ROM)
+removed.
+Unused block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<1>" (ROM)
+removed.
+Unused block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<2>" (ROM)
+removed.
+Unused block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<3>" (ROM)
+removed.
+Unused block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<4>" (ROM)
+removed.
+Unused block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<5>" (ROM)
+removed.
+Unused block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<6>" (ROM)
+removed.
+Unused block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<7>" (ROM)
+removed.
+Unused block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<8>" (ROM)
+removed.
+Unused block
+"USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_s
+ync_fifo.gl0.wr/gwas.gwdc0.wdc/Msub_wr_data_count_i_sub0000_lut<9>" (ROM)
+removed.
+Unused block
+"USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
+_sync_fifo.gcx.clkx/Mxor_wr_pntr_gc_xor0009_Result1" (ROM) removed.
+Unused block
+"USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
+_sync_fifo.gl0.rd/gras.rsts/ram_empty_i" (FF) removed.
+Unused block
+"USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or
+_sync_fifo.gl0.wr/gwas.wsts/ram_full_i" (FF) removed.
+Unused block "i2c_scl" (PAD) removed.
+Unused block "i2c_sda" (PAD) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		OK_MANAGER/BAUD_DATE/XST_GND
+GND 		OK_MANAGER/OPALKELLY_HOST/hicore/XST_GND
+VCC 		OK_MANAGER/OPALKELLY_HOST/hicore/XST_VCC
+LUT2 		OK_MANAGER/OPALKELLY_WO/ok2<16>_SW0
+   optimized to 0
+GND 		OK_MANAGER/PIPE_IN/XST_GND
+VCC 		OK_MANAGER/PIPE_IN/XST_VCC
+GND 		OK_MANAGER/TRIGGERS_IN/XST_GND
+GND 		OK_MANAGER/TRIGGERS_OUT/XST_GND
+FDC 		OK_MANAGER/TRIGGERS_OUT/ep_trigger0_1
+   optimized to 0
+FDC 		OK_MANAGER/TRIGGERS_OUT/ep_trigger0_10
+   optimized to 0
+FDC 		OK_MANAGER/TRIGGERS_OUT/ep_trigger0_11
+   optimized to 0
+FDC 		OK_MANAGER/TRIGGERS_OUT/ep_trigger0_12
+   optimized to 0
+FDC 		OK_MANAGER/TRIGGERS_OUT/ep_trigger0_13
+   optimized to 0
+FDC 		OK_MANAGER/TRIGGERS_OUT/ep_trigger0_14
+   optimized to 0
+FDC 		OK_MANAGER/TRIGGERS_OUT/ep_trigger0_15
+   optimized to 0
+FDC 		OK_MANAGER/TRIGGERS_OUT/ep_trigger0_2
+   optimized to 0
+FDC 		OK_MANAGER/TRIGGERS_OUT/ep_trigger0_3
+   optimized to 0
+FDC 		OK_MANAGER/TRIGGERS_OUT/ep_trigger0_4
+   optimized to 0
+FDC 		OK_MANAGER/TRIGGERS_OUT/ep_trigger0_5
+   optimized to 0
+FDC 		OK_MANAGER/TRIGGERS_OUT/ep_trigger0_6
+   optimized to 0
+FDC 		OK_MANAGER/TRIGGERS_OUT/ep_trigger0_7
+   optimized to 0
+FDC 		OK_MANAGER/TRIGGERS_OUT/ep_trigger0_8
+   optimized to 0
+FDC 		OK_MANAGER/TRIGGERS_OUT/ep_trigger0_9
+   optimized to 0
+GND 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/XST_GND
+LUT2 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/ok2_10_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/ok2_11_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/ok2_12_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/ok2_13_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/ok2_14_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/ok2_15_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/ok2_1_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/ok2_2_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/ok2_3_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/ok2_4_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/ok2_5_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/ok2_6_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/ok2_7_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/ok2_8_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/ok2_9_mux00001
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/wirehold_1
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/wirehold_10
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/wirehold_11
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/wirehold_12
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/wirehold_13
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/wirehold_14
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/wirehold_15
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/wirehold_2
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/wirehold_3
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/wirehold_4
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/wirehold_5
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/wirehold_6
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/wirehold_7
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/wirehold_8
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_BOARD_REQUEST/wirehold_9
+   optimized to 0
+GND 		OK_MANAGER/WIRE_OUT_PIPE_LENGTH/XST_GND
+LUT2 		OK_MANAGER/WIRE_OUT_PIPE_LENGTH/ok2_11_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_PIPE_LENGTH/ok2_12_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_PIPE_LENGTH/ok2_13_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_PIPE_LENGTH/ok2_14_mux00001
+   optimized to 0
+LUT2 		OK_MANAGER/WIRE_OUT_PIPE_LENGTH/ok2_15_mux00001
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_PIPE_LENGTH/wirehold_11
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_PIPE_LENGTH/wirehold_12
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_PIPE_LENGTH/wirehold_13
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_PIPE_LENGTH/wirehold_14
+   optimized to 0
+FDRE 		OK_MANAGER/WIRE_OUT_PIPE_LENGTH/wirehold_15
+   optimized to 0
+GND 		USART_FIFOS/FIFO_IN/FIFO_IN/XST_GND
+VCC 		USART_FIFOS/FIFO_IN/FIFO_IN/XST_VCC
+GND 		USART_FIFOS/FIFO_OUT/FIFO_OUT/XST_GND
+VCC 		USART_FIFOS/FIFO_OUT/FIFO_OUT/XST_VCC
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| LED_VECTOR<0>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| LED_VECTOR<1>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| LED_VECTOR<2>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| LED_VECTOR<3>                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| LOCAL_CLOCK                        | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| RX_IN                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| TX_OUT                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_in<0>                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| hi_in<1>                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| hi_in<2>                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| hi_in<3>                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| hi_in<4>                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| hi_in<5>                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| hi_in<6>                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| hi_in<7>                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| hi_inout<0>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_inout<1>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_inout<2>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_inout<3>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_inout<4>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_inout<5>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_inout<6>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_inout<7>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_inout<8>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_inout<9>                        | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_inout<10>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_inout<11>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_inout<12>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_inout<13>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_inout<14>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_inout<15>                       | IOB              | BIDIR     | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_muxsel                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_out<0>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| hi_out<1>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

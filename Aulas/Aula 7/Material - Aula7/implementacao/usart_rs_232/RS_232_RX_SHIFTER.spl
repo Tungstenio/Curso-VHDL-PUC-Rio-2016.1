@@ -1,0 +1,7 @@
+[Inputs]
+LOCAL_CLOCK
+RX_IN
+SHIFT_LEFT
+[Outputs]
+=OUTPUT[7:0]=
+[BiDir]

@@ -1,0 +1,1 @@
+vhdtdtfi -prj ROM_TX_RX_RAM_v2 -o "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula7/tarefa/ROM_TX_RX_RAM_v2/generic_RAM_clk.vhi" -module generic_RAM_clk -template C:/Xilinx/14.5/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work generic_RAM_clk.vhd 

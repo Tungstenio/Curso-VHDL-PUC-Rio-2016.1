@@ -1,0 +1,2 @@
+vhdtdtfi -lib work RS_232_RX_SHIFTER.vhd -prj USART_RS_232 -o RS_232_RX_SHIFTER.spl -module RS_232_RX_SHIFTER -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e RS_232_RX_SHIFTER.spl {C:/Users/Opto2/Dropbox/PROJETOS/XEM3005/STD PROJECTS/EXP1_USART_RS232/On-Board Tests/USART_RS_232/RS_232_RX_SHIFTER.sym} 

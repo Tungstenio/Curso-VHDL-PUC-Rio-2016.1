@@ -1,0 +1,482 @@
+--------------------------------------------------------------------------------
+Release 14.5 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -filter
+C:/Users/Opto2/Dropbox/EXP1_USART_RS232/On-Board Tests/usart_rs_232/iseconfig/filter.filter
+-intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml USART_FIFOS_MANAGER_TM.twx
+USART_FIFOS_MANAGER_TM.ncd -o USART_FIFOS_MANAGER_TM.twr
+USART_FIFOS_MANAGER_TM.pcf -ucf USART_FIFOS_ICF.ucf
+
+Design file:              USART_FIFOS_MANAGER_TM.ncd
+Physical constraint file: USART_FIFOS_MANAGER_TM.pcf
+Device,package,speed:     xc3s1200e,ft256,-4 (PRODUCTION 1.27 2013-03-26)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_LOCAL_CLOCK = PERIOD TIMEGRP "LOCAL_CLOCK" 20 ns HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 4239 paths analyzed, 743 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  10.383ns.
+--------------------------------------------------------------------------------
+
+Paths for end point USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A (RAMB16_X0Y3.WEA), 5 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     9.617ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_2 (FF)
+  Destination:          USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      10.383ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         LOCAL_CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    LOCAL_CLOCK_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_2 to USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y34.YQ      Tcko                  0.652   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<3>
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_2
+    SLICE_X68Y34.G4      net (fanout=6)        0.882   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<2>
+    SLICE_X68Y34.Y       Tilo                  0.759   LED_VECTOR_2_OBUF
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_FINISHED_cmp_eq00001
+    SLICE_X18Y46.G3      net (fanout=16)       3.720   RX_DONE
+    SLICE_X18Y46.Y       Tilo                  0.759   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1
+    RAMB16_X0Y3.WEA      net (fanout=21)       2.358   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_wr_en
+    RAMB16_X0Y3.CLKA     Tbwck                 1.253   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A
+    -------------------------------------------------  ---------------------------
+    Total                                     10.383ns (3.423ns logic, 6.960ns route)
+                                                       (33.0% logic, 67.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     9.651ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_1 (FF)
+  Destination:          USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      10.349ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         LOCAL_CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    LOCAL_CLOCK_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_1 to USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y35.YQ      Tcko                  0.652   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<0>
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_1
+    SLICE_X68Y34.G1      net (fanout=7)        0.848   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<1>
+    SLICE_X68Y34.Y       Tilo                  0.759   LED_VECTOR_2_OBUF
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_FINISHED_cmp_eq00001
+    SLICE_X18Y46.G3      net (fanout=16)       3.720   RX_DONE
+    SLICE_X18Y46.Y       Tilo                  0.759   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1
+    RAMB16_X0Y3.WEA      net (fanout=21)       2.358   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_wr_en
+    RAMB16_X0Y3.CLKA     Tbwck                 1.253   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A
+    -------------------------------------------------  ---------------------------
+    Total                                     10.349ns (3.423ns logic, 6.926ns route)
+                                                       (33.1% logic, 66.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     9.788ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_3 (FF)
+  Destination:          USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      10.212ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         LOCAL_CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    LOCAL_CLOCK_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_3 to USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y34.XQ      Tcko                  0.592   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<3>
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_3
+    SLICE_X68Y34.G2      net (fanout=5)        0.771   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<3>
+    SLICE_X68Y34.Y       Tilo                  0.759   LED_VECTOR_2_OBUF
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_FINISHED_cmp_eq00001
+    SLICE_X18Y46.G3      net (fanout=16)       3.720   RX_DONE
+    SLICE_X18Y46.Y       Tilo                  0.759   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1
+    RAMB16_X0Y3.WEA      net (fanout=21)       2.358   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_wr_en
+    RAMB16_X0Y3.CLKA     Tbwck                 1.253   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A
+    -------------------------------------------------  ---------------------------
+    Total                                     10.212ns (3.363ns logic, 6.849ns route)
+                                                       (32.9% logic, 67.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A (RAMB16_X0Y3.ENA), 5 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     9.817ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_2 (FF)
+  Destination:          USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      10.183ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         LOCAL_CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    LOCAL_CLOCK_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_2 to USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y34.YQ      Tcko                  0.652   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<3>
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_2
+    SLICE_X68Y34.G4      net (fanout=6)        0.882   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<2>
+    SLICE_X68Y34.Y       Tilo                  0.759   LED_VECTOR_2_OBUF
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_FINISHED_cmp_eq00001
+    SLICE_X18Y46.G3      net (fanout=16)       3.720   RX_DONE
+    SLICE_X18Y46.Y       Tilo                  0.759   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1
+    RAMB16_X0Y3.ENA      net (fanout=21)       2.641   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_wr_en
+    RAMB16_X0Y3.CLKA     Tbeck                 0.770   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A
+    -------------------------------------------------  ---------------------------
+    Total                                     10.183ns (2.940ns logic, 7.243ns route)
+                                                       (28.9% logic, 71.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     9.851ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_1 (FF)
+  Destination:          USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      10.149ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         LOCAL_CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    LOCAL_CLOCK_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_1 to USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y35.YQ      Tcko                  0.652   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<0>
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_1
+    SLICE_X68Y34.G1      net (fanout=7)        0.848   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<1>
+    SLICE_X68Y34.Y       Tilo                  0.759   LED_VECTOR_2_OBUF
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_FINISHED_cmp_eq00001
+    SLICE_X18Y46.G3      net (fanout=16)       3.720   RX_DONE
+    SLICE_X18Y46.Y       Tilo                  0.759   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1
+    RAMB16_X0Y3.ENA      net (fanout=21)       2.641   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_wr_en
+    RAMB16_X0Y3.CLKA     Tbeck                 0.770   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A
+    -------------------------------------------------  ---------------------------
+    Total                                     10.149ns (2.940ns logic, 7.209ns route)
+                                                       (29.0% logic, 71.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     9.988ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_3 (FF)
+  Destination:          USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A (RAM)
+  Requirement:          20.000ns
+  Data Path Delay:      10.012ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         LOCAL_CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    LOCAL_CLOCK_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_3 to USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y34.XQ      Tcko                  0.592   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<3>
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_3
+    SLICE_X68Y34.G2      net (fanout=5)        0.771   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<3>
+    SLICE_X68Y34.Y       Tilo                  0.759   LED_VECTOR_2_OBUF
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_FINISHED_cmp_eq00001
+    SLICE_X18Y46.G3      net (fanout=16)       3.720   RX_DONE
+    SLICE_X18Y46.Y       Tilo                  0.759   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1
+    RAMB16_X0Y3.ENA      net (fanout=21)       2.641   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_wr_en
+    RAMB16_X0Y3.CLKA     Tbeck                 0.770   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s3_noinit.ram/dpram.dp9x18.ram.A
+    -------------------------------------------------  ---------------------------
+    Total                                     10.012ns (2.880ns logic, 7.132ns route)
+                                                       (28.8% logic, 71.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_5 (SLICE_X14Y43.CE), 5 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     10.864ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_2 (FF)
+  Destination:          USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_5 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      9.136ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         LOCAL_CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    LOCAL_CLOCK_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_2 to USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y34.YQ      Tcko                  0.652   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<3>
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_2
+    SLICE_X68Y34.G4      net (fanout=6)        0.882   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<2>
+    SLICE_X68Y34.Y       Tilo                  0.759   LED_VECTOR_2_OBUF
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_FINISHED_cmp_eq00001
+    SLICE_X18Y46.G3      net (fanout=16)       3.720   RX_DONE
+    SLICE_X18Y46.Y       Tilo                  0.759   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1
+    SLICE_X14Y43.CE      net (fanout=21)       1.809   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_wr_en
+    SLICE_X14Y43.CLK     Tceck                 0.555   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1<5>
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_5
+    -------------------------------------------------  ---------------------------
+    Total                                      9.136ns (2.725ns logic, 6.411ns route)
+                                                       (29.8% logic, 70.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     10.898ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_1 (FF)
+  Destination:          USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_5 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      9.102ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         LOCAL_CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    LOCAL_CLOCK_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_1 to USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y35.YQ      Tcko                  0.652   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<0>
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_1
+    SLICE_X68Y34.G1      net (fanout=7)        0.848   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<1>
+    SLICE_X68Y34.Y       Tilo                  0.759   LED_VECTOR_2_OBUF
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_FINISHED_cmp_eq00001
+    SLICE_X18Y46.G3      net (fanout=16)       3.720   RX_DONE
+    SLICE_X18Y46.Y       Tilo                  0.759   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1
+    SLICE_X14Y43.CE      net (fanout=21)       1.809   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_wr_en
+    SLICE_X14Y43.CLK     Tceck                 0.555   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1<5>
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_5
+    -------------------------------------------------  ---------------------------
+    Total                                      9.102ns (2.725ns logic, 6.377ns route)
+                                                       (29.9% logic, 70.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     11.035ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_3 (FF)
+  Destination:          USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_5 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      8.965ns (Levels of Logic = 2)
+  Clock Path Skew:      0.000ns
+  Source Clock:         LOCAL_CLOCK_BUFGP rising at 0.000ns
+  Destination Clock:    LOCAL_CLOCK_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_3 to USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X64Y34.XQ      Tcko                  0.592   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<3>
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER_3
+    SLICE_X68Y34.G2      net (fanout=5)        0.771   USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_COUNTER<3>
+    SLICE_X68Y34.Y       Tilo                  0.759   LED_VECTOR_2_OBUF
+                                                       USART_MANAGER/RX/SHIFT_MANAGER/MESSAGE_FINISHED_cmp_eq00001
+    SLICE_X18Y46.G3      net (fanout=16)       3.720   RX_DONE
+    SLICE_X18Y46.Y       Tilo                  0.759   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/ram_wr_en_i1
+    SLICE_X14Y43.CE      net (fanout=21)       1.809   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/ram_wr_en
+    SLICE_X14Y43.CLK     Tceck                 0.555   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1<5>
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/count_d1_5
+    -------------------------------------------------  ---------------------------
+    Total                                      8.965ns (2.665ns logic, 6.300ns route)
+                                                       (29.7% logic, 70.3% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_LOCAL_CLOCK = PERIOD TIMEGRP "LOCAL_CLOCK" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_1 (SLICE_X59Y79.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.919ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1 (FF)
+  Destination:          USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.922ns (Levels of Logic = 0)
+  Clock Path Skew:      0.003ns (0.005 - 0.002)
+  Source Clock:         LOCAL_CLOCK_BUFGP rising at 20.000ns
+  Destination Clock:    LOCAL_CLOCK_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1 to USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X58Y76.XQ      Tcko                  0.474   USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg<1>
+                                                       USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg_1
+    SLICE_X59Y79.BX      net (fanout=1)        0.355   USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].rd_stg_inst/Q_reg<1>
+    SLICE_X59Y79.CLK     Tckdi       (-Th)    -0.093   USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg<1>
+                                                       USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].rd_stg_inst/Q_reg_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.922ns (0.567ns logic, 0.355ns route)
+                                                       (61.5% logic, 38.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_3 (SLICE_X19Y48.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.931ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_3 (FF)
+  Destination:          USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.931ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         LOCAL_CLOCK_BUFGP rising at 20.000ns
+  Destination Clock:    LOCAL_CLOCK_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_3 to USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X18Y48.XQ      Tcko                  0.474   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg<3>
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_3
+    SLICE_X19Y48.BX      net (fanout=1)        0.364   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg<3>
+    SLICE_X19Y48.CLK     Tckdi       (-Th)    -0.093   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg<3>
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.931ns (0.567ns logic, 0.364ns route)
+                                                       (60.9% logic, 39.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_7 (SLICE_X14Y46.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.971ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_7 (FF)
+  Destination:          USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_7 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.971ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         LOCAL_CLOCK_BUFGP rising at 20.000ns
+  Destination Clock:    LOCAL_CLOCK_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_7 to USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X15Y47.XQ      Tcko                  0.473   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg<7>
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg_7
+    SLICE_X14Y46.BX      net (fanout=1)        0.364   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[1].wr_stg_inst/Q_reg<7>
+    SLICE_X14Y46.CLK     Tckdi       (-Th)    -0.134   USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg<7>
+                                                       USART_FIFOS/FIFO_OUT/FIFO_OUT/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/gsync_stage[2].wr_stg_inst/Q_reg_7
+    -------------------------------------------------  ---------------------------
+    Total                                      0.971ns (0.607ns logic, 0.364ns route)
+                                                       (62.5% logic, 37.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_LOCAL_CLOCK = PERIOD TIMEGRP "LOCAL_CLOCK" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 16.808ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 1.596ns (Trpw)
+  Physical resource: USART_FIFOS/FIFO_IN/FIFO_IN_READ_STATUS<0>/SR
+  Logical resource: USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_0/SR
+  Location pin: SLICE_X61Y85.SR
+  Clock network: USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>
+--------------------------------------------------------------------------------
+Slack: 16.808ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 1.596ns (Trpw)
+  Physical resource: USART_FIFOS/FIFO_IN/FIFO_IN_READ_STATUS<0>/SR
+  Logical resource: USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_0/SR
+  Location pin: SLICE_X61Y85.SR
+  Clock network: USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>
+--------------------------------------------------------------------------------
+Slack: 16.808ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 1.596ns (Trpw)
+  Physical resource: USART_FIFOS/FIFO_IN/FIFO_IN_READ_STATUS<0>/SR
+  Logical resource: USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.grdc1.rdc/rd_dc_i_1/SR
+  Location pin: SLICE_X61Y85.SR
+  Clock network: USART_FIFOS/FIFO_IN/FIFO_IN/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg<2>
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock LOCAL_CLOCK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+LOCAL_CLOCK    |   10.383|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 4239 paths, 0 nets, and 1036 connections
+
+Design statistics:
+   Minimum period:  10.383ns{1}   (Maximum frequency:  96.311MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed May 11 17:49:36 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 199 MB
+
+
+
