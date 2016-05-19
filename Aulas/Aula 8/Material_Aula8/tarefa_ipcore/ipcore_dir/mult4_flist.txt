@@ -1,0 +1,15 @@
+# Output products list for <mult4>
+_xmsgs\pn_parser.xmsgs
+mult4.asy
+mult4.gise
+mult4.ngc
+mult4.sym
+mult4.vhd
+mult4.vho
+mult4.xco
+mult4.xise
+mult4\doc\mult_gen_ds255.pdf
+mult4\doc\mult_gen_v11_2_readme.txt
+mult4\doc\mult_gen_v11_2_vinfo.html
+mult4_flist.txt
+mult4_xmdf.tcl

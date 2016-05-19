@@ -1,0 +1,2 @@
+vhdl work "ipcore_dir/mult4.vhd"
+vhdl work "mult4_TB.vhd"

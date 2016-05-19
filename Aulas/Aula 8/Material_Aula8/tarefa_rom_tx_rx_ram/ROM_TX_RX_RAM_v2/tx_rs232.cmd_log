@@ -1,0 +1,1 @@
+vhdtdtfi -prj ROM_TX_RX_RAM_v2 -o "C:/Users/Opto2/Dropbox/Curso de Extensao VHDL/Em Desenvolvimento/Aula7/tarefa/ROM_TX_RX_RAM_v2/tx_rs232.vhi" -module tx_rs232 -template C:/Xilinx/14.5/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counter_pulse.vhd -lib work counter_limit.vhd -lib work tx_counters.vhd -lib work ShiftRegister.vhd -lib work tx_rs232.vhd 
