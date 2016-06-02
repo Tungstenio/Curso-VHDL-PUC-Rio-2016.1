@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Opto2/Dropbox/Curso_de_Extensao_VHDL/Aulas/Aula 9/Material_Aula9/FLOAT_MULTIPLIER/FLOAT_MULTIPLIER_TB_isim_beh.exe" -prj "C:/Users/Opto2/Dropbox/Curso_de_Extensao_VHDL/Aulas/Aula 9/Material_Aula9/FLOAT_MULTIPLIER/FLOAT_MULTIPLIER_TB_beh.prj" "work.FLOAT_MULTIPLIER_TB" 

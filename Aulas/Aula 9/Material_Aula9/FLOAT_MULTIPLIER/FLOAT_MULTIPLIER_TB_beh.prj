@@ -1,0 +1,4 @@
+vhdl work "NORM.vhd"
+vhdl work "ARBITRARY_MULTIPLIER.vhd"
+vhdl work "FLOAT_MULTIPLIER.vhd"
+vhdl work "FLOAT_MULTIPLIER_TB.vhd"
