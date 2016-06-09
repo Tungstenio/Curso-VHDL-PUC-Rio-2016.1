@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Opto2/Dropbox/Curso_de_Extensao_VHDL/Aulas/Aula 10/Material_aula10/SOMADOR_FLOAT/PIPELINED_FLOAT_ADDER_TB_isim_beh.exe" -prj "C:/Users/Opto2/Dropbox/Curso_de_Extensao_VHDL/Aulas/Aula 10/Material_aula10/SOMADOR_FLOAT/PIPELINED_FLOAT_ADDER_TB_beh.prj" "work.PIPELINED_FLOAT_ADDER_TB" 

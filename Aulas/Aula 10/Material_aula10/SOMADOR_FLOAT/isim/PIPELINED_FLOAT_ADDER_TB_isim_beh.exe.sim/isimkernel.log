@@ -1,0 +1,28 @@
+Command line:
+   PIPELINED_FLOAT_ADDER_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50324
+
+Wed Jun 08 15:44:54 2016
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 373.273 Meg
+
+ Total Signals          : 496
+ Total Nets             : 2369
+ Total Signal Drivers   : 349
+ Total Blocks           : 176
+ Total Primitive Blocks : 110
+ Total Processes        : 341
+ Total Traceable Variables  : 118
+ Total Scalar Nets and Variables : 2855
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 373.273 Meg
+
+Wed Jun 08 15:45:22 2016
+
